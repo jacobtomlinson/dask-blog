@@ -1,0 +1,11 @@
+myst-nb
+myst-parser
+nbsphinx
+numpydoc
+sphinx-book-theme
+sphinx
+sphinx-autobuild
+sphinx-copybutton
+sphinx-design
+sphinxcontrib-mermaid
+yasfb
