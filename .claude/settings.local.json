@@ -1,0 +1,12 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:ablog.readthedocs.io)",
+      "WebFetch(domain:myst-parser.readthedocs.io)",
+      "WebFetch(domain:pydata-sphinx-theme.readthedocs.io)",
+      "WebSearch",
+      "WebFetch(domain:mackenga.ro)",
+      "WebFetch(domain:www.sphinx-doc.org)"
+    ]
+  }
+}

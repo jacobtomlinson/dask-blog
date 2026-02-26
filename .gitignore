@@ -4,3 +4,10 @@ _site/
 .jekyll-metadata
 Gemfile.lock
 .DS_Store
+_build/
+_website/
+.doctrees/
+node_modules/
+public/
+__pycache__/
+*.pyc
