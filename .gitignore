@@ -1,6 +1,11 @@
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
-Gemfile.lock
+# Hugo
+public/
+resources/
+
+# Node / Playwright
+node_modules/
+playwright/test-results/
+playwright/playwright-report/
+
+# OS
 .DS_Store

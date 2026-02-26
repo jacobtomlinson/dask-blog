@@ -1,0 +1,10 @@
+{{ define "main" }}
+<div class="container">
+  <h1>Tags</h1>
+  <ul class="tag-list">
+    {{- range .Pages }}
+    <li><a href="{{ .RelPermalink }}">{{ .Title }} ({{ len .Pages }})</a></li>
+    {{- end }}
+  </ul>
+</div>
+{{ end }}

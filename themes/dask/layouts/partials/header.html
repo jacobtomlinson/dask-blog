@@ -1,0 +1,19 @@
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-inner">
+    <a class="navbar-brand" href="{{ "/" | relURL }}">
+      <svg width="28" height="28" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <rect width="100" height="100" rx="8" fill="#FFC11E"/>
+        <text x="50" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="60" fill="#262326">D</text>
+      </svg>
+      Dask Blog
+    </a>
+    <ul class="navbar-nav">
+      <li><a href="{{ "/" | relURL }}">Blog</a></li>
+      <li><a href="{{ "/tag/" | relURL }}">Tags</a></li>
+      <li><a href="https://www.dask.org" rel="noopener">Docs</a></li>
+      <li>
+        {{- partial "theme-toggle.html" . -}}
+      </li>
+    </ul>
+  </div>
+</nav>

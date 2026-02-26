@@ -1,0 +1,353 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Dask logo" [ref=e5]
+      - navigation [ref=e6]:
+        - button "Community" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: 
+          - generic [ref=e10]: Community
+        - link "Blog" [ref=e11] [cursor=pointer]:
+          - /url: /blog
+        - link "Docs" [ref=e13] [cursor=pointer]:
+          - /url: https://docs.dask.org/en/stable/
+      - text: 
+  - generic [ref=e15]:
+    - generic [ref=e16]:
+      - generic [ref=e18]:
+        - heading "Parallel Python" [level=1] [ref=e19]
+        - heading "Fast and Easy" [level=2] [ref=e20]
+        - paragraph [ref=e21]: Easy Parallel Python that does what you need
+        - link "Get started" [ref=e23] [cursor=pointer]:
+          - /url: https://docs.dask.org/en/stable/
+      - img [ref=e26]
+    - generic [ref=e1468]:
+      - heading "What you can do with Dask" [level=2] [ref=e1470]
+      - generic [ref=e1471]:
+        - tablist [ref=e1472]:
+          - tab "Big Pandas" [selected] [ref=e1473] [cursor=pointer]:
+            - generic [ref=e1474]: Big Pandas
+          - tab "Parallel For Loops" [ref=e1475] [cursor=pointer]:
+            - generic [ref=e1476]: Parallel For Loops
+          - tab "Big Arrays" [ref=e1477] [cursor=pointer]:
+            - generic [ref=e1478]: Big Arrays
+          - tab "Machine Learning" [ref=e1479] [cursor=pointer]:
+            - generic [ref=e1480]: Machine Learning
+        - tabpanel "Big Pandas" [ref=e1482]:
+          - generic [ref=e1483]:
+            - generic [ref=e1484]:
+              - generic [ref=e1485]:
+                - heading "Big Pandas" [level=2] [ref=e1486]
+                - paragraph [ref=e1488]: Dask DataFrames use pandas under the hood, so your current code likely just works. It’s faster than Spark and easier too.
+                - generic [ref=e1489]:
+                  - link "Documentation" [ref=e1490] [cursor=pointer]:
+                    - /url: https://docs.dask.org/en/stable/dataframe.html
+                  - link "Performance Benchmarks" [ref=e1491] [cursor=pointer]:
+                    - /url: https://docs.coiled.io/blog/tpch.html?utm_source=dask.org&utm_medium=homepage
+              - generic [ref=e1492]:
+                - img "Parquet logo" [ref=e1493]
+                - img "Apache Arrow logo" [ref=e1494]
+                - img "Pandas logo" [ref=e1495]
+            - code [ref=e1503]: "import dask.dataframe as dd df = dd.read_parquet(\"s3://data/uber/\") # How much did NYC pay Uber? df.base_passenger_fare.sum().compute() # And how much did drivers make? df.driver_pay.sum().compute()"
+  - generic [ref=e1504]:
+    - heading "Performance at Scale" [level=2] [ref=e1506]
+    - generic [ref=e1507]:
+      - generic [ref=e1508]:
+        - heading "Fast on Machines" [level=2] [ref=e1509]
+        - generic [ref=e1510]:
+          - paragraph [ref=e1511]: Dask is lightweight, and runs your raw code on your machines without getting in the way. No virtualization or compilers.
+          - paragraph [ref=e1512]:
+            - text: As the Python stack matures your code matures. Today
+            - link "Dask is 50% faster than Spark" [ref=e1513] [cursor=pointer]:
+              - /url: https://docs.coiled.io/blog/spark-vs-dask.html?utm_source=dask.org&utm_medium=homepage
+            - text: on standard benchmarks.
+      - img [ref=e1517]
+    - generic [ref=e1643]:
+      - code [ref=e1652]
+      - generic [ref=e1653]:
+        - heading "Made for Humans" [level=2] [ref=e1654]
+        - generic [ref=e1655]:
+          - paragraph [ref=e1656]:
+            - strong [ref=e1657]: Computers are cheap. Humans are expensive.
+          - paragraph [ref=e1658]: Fortunately, humans already know how to use Dask.
+          - paragraph [ref=e1659]: It’s just Python. It’s just pandas. It’s just NumPy.
+          - paragraph [ref=e1660]: Dask’s dashboard guides you towards efficiency, quickly teaching you to become a distributed computing expert.
+    - generic [ref=e1662]:
+      - heading "Cheap and Efficient" [level=2] [ref=e1663]
+      - paragraph [ref=e1665]:
+        - strong [ref=e1666]: Fast humans + Fast machines = Cheap Computing
+      - generic [ref=e1667]:
+        - generic [ref=e1668]:
+          - generic [ref=e1669]: Rows of Data Computed
+          - generic [ref=e1670]: "0"
+        - generic [ref=e1671]:
+          - generic [ref=e1672]: Cost
+          - generic [ref=e1673]:
+            - generic [ref=e1674]: $
+            - generic [ref=e1675]: "0.03"
+        - paragraph [ref=e1677]:
+          - text: Dask users often process cloud data at
+          - link "$0.10 per TiB" [ref=e1678] [cursor=pointer]:
+            - /url: https://docs.coiled.io/blog/ten-cents.html?utm_source=dask.org&utm_medium=homepage
+  - generic [ref=e1680]:
+    - tablist [ref=e1681]:
+      - tab "Open Source Deployment" [selected] [ref=e1682] [cursor=pointer]:
+        - generic [ref=e1683]: Open Source Deployment
+      - tab "Managed Cloud" [ref=e1684] [cursor=pointer]:
+        - generic [ref=e1685]: Managed Cloud
+    - tabpanel "Open Source Deployment" [ref=e1687]:
+      - generic [ref=e1689]:
+        - heading "Where you can run Dask" [level=2] [ref=e1690]
+        - generic [ref=e1692]:
+          - generic [ref=e1693]:
+            - generic [ref=e1694]:
+              - heading "Open Source Deployment" [level=2] [ref=e1695]
+              - paragraph [ref=e1697]: Run Dask on your laptop (it’s trivial) or deploy it on any resource manager like Kubernetes, an HPC job schedulers, cloud SaaS services, or even legacy Hadoop/Spark clusters.
+              - generic [ref=e1698]:
+                - link "Documentation" [ref=e1699] [cursor=pointer]:
+                  - /url: https://docs.dask.org/en/stable/deploying.html
+                - link "Dask deployment video" [ref=e1700] [cursor=pointer]:
+                  - /url: https://www.youtube.com/watch?v=faFncNrXmIY
+            - generic [ref=e1701]:
+              - img "Kubernetes logo"
+              - img "Yarn logo"
+              - img "Slurm logo"
+              - img "LSF logo"
+              - img "OpenOBS logo"
+          - code [ref=e1709]: "from dask.distributed import LocalCluster cluster = LocalCluster( processes=False, ) client = cluster.get_client() # Use Dask locally import dask.dataframe as dd df = dd.read_parquet(\"/path/to/data.parquet\") df.value.mean().compute()"
+  - generic [ref=e1712]:
+    - generic [ref=e1713]:
+      - heading "What users say about Dask" [level=2] [ref=e1714]
+      - generic [ref=e1716]: People use Dask and like it! You won’t be alone!
+      - generic [ref=e1717]:
+        - generic [ref=e1718]: It’s easy
+        - generic [ref=e1720]: It’s massive
+        - generic [ref=e1722]: It solved my problem
+    - generic [ref=e1723]:
+      - generic [ref=e1724]:
+        - generic [ref=e1725]:
+          - generic [ref=e1726]: “Dask has been a trailblazer in making distributed and out-of-memory computing in Python easy and accessible for everyone.”
+          - generic [ref=e1727]:
+            - img "Wes McKinney" [ref=e1728]
+            - generic [ref=e1729]: Wes McKinney, Pandas
+        - generic [ref=e1730]:
+          - img "Capital One logo"
+          - generic [ref=e1731]: “At Capital One, early implementations of Dask have reduced model training times by 91% within a few months of development effort.”
+          - generic [ref=e1732]:
+            - img "Ryan McEntee" [ref=e1733]
+            - generic [ref=e1734]: Ryan McEntee, Capital One
+        - generic [ref=e1735]:
+          - img "Pangeo logo"
+          - generic [ref=e1736]: “My climate science research has been made possible by Dask. Dask integrates seamlessly with Xarray, making it easy to run large-scale computations on multi-dimensional datasets. I can focus on my research instead of thinking about parallelism.”
+          - generic [ref=e1737]:
+            - img "Paige Martin" [ref=e1738]
+            - generic [ref=e1739]: Paige Martin, Pangeo
+        - generic [ref=e1740]:
+          - img "Simeio logo"
+          - generic [ref=e1741]: “Dask shines when dealing with generic data structures which don’t conform to table-like structures. PySpark has RDDs, but who wants to code in Python and debug verbose Java logs?”
+          - generic [ref=e1743]: Ajith Aravind, Simeio
+      - generic [ref=e1744]:
+        - generic [ref=e1745]:
+          - img "earthmover logo"
+          - generic [ref=e1746]: “Dask has transformed how the world interacts with weather, climate, and geospatial data by making it super easy to scale up data processing pipelines on HPC or cloud. Things that seemed impossible five years ago are now routine thanks to Dask.”
+          - generic [ref=e1747]:
+            - img "Ryan Abernathy" [ref=e1748]
+            - generic [ref=e1749]: Ryan Abernathy, Earthmover
+        - generic [ref=e1750]:
+          - img "Fanatics logo"
+          - generic [ref=e1751]: “With Dask, I can easily adapt code that runs on a single machine and scale it across an entire cluster. Very few other tools let you get going that quickly—across any language.”
+          - generic [ref=e1752]:
+            - img "Jacqueline Nolis" [ref=e1753]
+            - generic [ref=e1754]: Jacqueline Nolis, Fanatics Inc.
+        - generic [ref=e1755]:
+          - img "GrubHub logo"
+          - generic [ref=e1756]: “Dask also makes it easy to deploy distributed work locally using multiple Python processes in a way that is nearly identical to how full production load is distributed.”
+          - generic [ref=e1757]:
+            - img "Hugues Demers" [ref=e1758]
+            - generic [ref=e1759]: Hugues Demers, Grubhub
+        - generic [ref=e1760]:
+          - img "Wayfair logo"
+          - generic [ref=e1761]: “To further accelerate our users’ ability to scale easily on the cloud, we expanded this by setting up pre-configured Horovod and Dask clusters.”
+          - generic [ref=e1762]:
+            - img "Meenakshi Sharma" [ref=e1763]
+            - generic [ref=e1764]: Meenakshi Sharma, Wayfair
+        - generic [ref=e1765]:
+          - img "Rebuy logo"
+          - generic [ref=e1766]: “I used to work in Spark all the time. The sooner you move to Dask, the sooner you’ll be grateful you did.”
+          - generic [ref=e1767]:
+            - img "John Renken" [ref=e1768]
+            - generic [ref=e1769]: John Renken, Rebuy
+  - generic [ref=e1770]:
+    - heading "Organizations That Use Dask" [level=2] [ref=e1772]
+    - list [ref=e1774]:
+      - listitem [ref=e1775]:
+        - img "Capital One" [ref=e1777]
+      - listitem [ref=e1778]:
+        - img "DE Shaw & Co" [ref=e1780]
+      - listitem [ref=e1781]:
+        - img "Grubhub" [ref=e1783]
+      - listitem [ref=e1784]:
+        - img "Microsoft" [ref=e1786]
+      - listitem [ref=e1787]:
+        - img "NASA" [ref=e1789]
+      - listitem [ref=e1790]:
+        - img "NVIDIA" [ref=e1792]
+      - listitem [ref=e1793]:
+        - img "Shell" [ref=e1795]
+      - listitem [ref=e1796]:
+        - img "Two Sigma" [ref=e1798]
+      - listitem [ref=e1799]:
+        - img "US Air Force" [ref=e1801]
+      - listitem [ref=e1802]:
+        - img "US government" [ref=e1804]
+      - listitem [ref=e1805]:
+        - img "Walmart" [ref=e1807]
+      - listitem [ref=e1808]:
+        - img "arm" [ref=e1810]
+  - generic [ref=e1812]:
+    - heading "Use Cases" [level=2] [ref=e1813]
+    - generic [ref=e1815]: Anything you can do with Python, you can scale with Dask
+    - generic [ref=e1816]:
+      - link "Pandas logo NYC Uber/Lyft Tools DataFrames Parquet Data 50 GB of Parquet data" [ref=e1817] [cursor=pointer]:
+        - /url: https://docs.coiled.io/user_guide/uber-lyft.html?utm_source=dask.org&utm_medium=homepage
+        - img "Pandas logo" [ref=e1819]
+        - generic [ref=e1821]:
+          - heading "NYC Uber/Lyft" [level=3] [ref=e1822]
+          - generic [ref=e1823]: Tools
+          - generic [ref=e1824]:
+            - generic [ref=e1825]: DataFrames
+            - generic [ref=e1826]: Parquet
+          - generic [ref=e1827]: Data
+          - generic [ref=e1828]: 50 GB of Parquet data
+      - link "Prefect logo Scalable ETL Pipeline Tools Deltalake Streamlit Prefect Data 2 TB of TPC-H JSON records" [ref=e1829] [cursor=pointer]:
+        - /url: https://docs.coiled.io/blog/easy-scalable-production-etl.html?utm_source=dask.org&utm_medium=homepage
+        - img "Prefect logo" [ref=e1831]
+        - generic [ref=e1833]:
+          - heading "Scalable ETL Pipeline" [level=3] [ref=e1834]
+          - generic [ref=e1835]: Tools
+          - generic [ref=e1836]:
+            - generic [ref=e1837]: Deltalake
+            - generic [ref=e1838]: Streamlit
+            - generic [ref=e1839]: Prefect
+          - generic [ref=e1840]: Data
+          - generic [ref=e1841]: 2 TB of TPC-H JSON records
+      - link "Xarray logo National Water Model Tools Xarray Zarr Flox Data 250 TB of Zarr data" [ref=e1842] [cursor=pointer]:
+        - /url: https://docs.coiled.io/blog/coiled-xarray.html?utm_source=dask.org&utm_medium=homepage
+        - img "Xarray logo" [ref=e1844]
+        - generic [ref=e1846]:
+          - heading "National Water Model" [level=3] [ref=e1847]
+          - generic [ref=e1848]: Tools
+          - generic [ref=e1849]:
+            - generic [ref=e1850]: Xarray
+            - generic [ref=e1851]: Zarr
+            - generic [ref=e1852]: Flox
+          - generic [ref=e1853]: Data
+          - generic [ref=e1854]: 250 TB of Zarr data
+      - link "TPC logo TPC-H Benchmark Tools Spark DuckDB Polars Data Standard SQL benchmark results" [ref=e1855] [cursor=pointer]:
+        - /url: https://docs.coiled.io/blog/dask-expr-tpch-dask.html?utm_source=dask.org&utm_medium=homepage
+        - img "TPC logo" [ref=e1857]
+        - generic [ref=e1859]:
+          - heading "TPC-H Benchmark" [level=3] [ref=e1860]
+          - generic [ref=e1861]: Tools
+          - generic [ref=e1862]:
+            - generic [ref=e1863]: Spark
+            - generic [ref=e1864]: DuckDB
+            - generic [ref=e1865]: Polars
+          - generic [ref=e1866]: Data
+          - generic [ref=e1867]: Standard SQL benchmark results
+      - link "NASA logo NASA Satellite Imagery Tools Geotiff Xarray Coiled Data 1 TB of NetCDF files" [ref=e1868] [cursor=pointer]:
+        - /url: https://docs.coiled.io/blog/processing-terabyte-scale-nasa-cloud-datasets-with-coiled.html?utm_source=dask.org&utm_medium=homepage
+        - img "NASA logo" [ref=e1870]
+        - generic [ref=e1872]:
+          - heading "NASA Satellite Imagery" [level=3] [ref=e1873]
+          - generic [ref=e1874]: Tools
+          - generic [ref=e1875]:
+            - generic [ref=e1876]: Geotiff
+            - generic [ref=e1877]: Xarray
+            - generic [ref=e1878]: Coiled
+          - generic [ref=e1879]: Data
+          - generic [ref=e1880]: 1 TB of NetCDF files
+      - link "xGBoost logo XGBoost Model Tuning Tools XGBoost Parquet Data 75 GB of Parquet data" [ref=e1881] [cursor=pointer]:
+        - /url: https://docs.coiled.io/user_guide/xgboost.html?utm_source=dask.org&utm_medium=homepage
+        - img "xGBoost logo" [ref=e1883]
+        - generic [ref=e1885]:
+          - heading "XGBoost Model Tuning" [level=3] [ref=e1886]
+          - generic [ref=e1887]: Tools
+          - generic [ref=e1888]:
+            - generic [ref=e1889]: XGBoost
+            - generic [ref=e1890]: Parquet
+          - generic [ref=e1891]: Data
+          - generic [ref=e1892]: 75 GB of Parquet data
+      - generic [ref=e1893] [cursor=pointer]:
+        - heading "Want more examples?" [level=3] [ref=e1894]
+        - generic [ref=e1895]: Visit the Dask Blog or Dask Youtube Channel
+        - generic [ref=e1896]:
+          - link "Dask Demo Day" [ref=e1897]:
+            - /url: https://www.youtube.com/playlist?list=PLJ0vO2F_f6OD0cwscL_yeG1aC3ESBquAT
+          - link "Dask YouTube Channel" [ref=e1898]:
+            - /url: https://www.youtube.com/c/dask-dev
+  - generic [ref=e1901]:
+    - generic [ref=e1902]:
+      - heading "Super easy to get started" [level=2] [ref=e1903]
+      - generic [ref=e1905]: You can run Dask right now on your computer. It’s simple and lightweight.
+      - link "Install Now" [ref=e1907] [cursor=pointer]:
+        - /url: https://docs.dask.org/en/latest/install.html
+    - code [ref=e1915]
+  - generic [ref=e1919]:
+    - heading "Most people use Dask just on their laptops to scale out to 100 GiB datasets. Dask works great on a single machine." [level=2] [ref=e1920]
+    - link "Proceed to documentation" [ref=e1922] [cursor=pointer]:
+      - /url: https://docs.dask.org/en/stable/
+  - generic [ref=e1925]:
+    - link "Dask logo" [ref=e1927] [cursor=pointer]:
+      - /url: /
+      - img "Dask logo" [ref=e1928]
+    - generic [ref=e1929]:
+      - generic [ref=e1931]: Get Started
+      - link "Latest" [ref=e1934] [cursor=pointer]:
+        - /url: https://docs.dask.org/en/stable/
+    - generic [ref=e1935]:
+      - link "Community" [ref=e1937] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e1939]:
+        - link "Get Help" [ref=e1940] [cursor=pointer]:
+          - /url: /get-help
+        - link "Powered By" [ref=e1941] [cursor=pointer]:
+          - /url: /powered-by
+        - link "Demo Day" [ref=e1942] [cursor=pointer]:
+          - /url: https://github.com/dask/community/issues/307
+    - generic [ref=e1943]:
+      - link "Blog" [ref=e1945] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e1947]:
+        - link "Dask Blog" [ref=e1948] [cursor=pointer]:
+          - /url: /blog
+        - link "Contribute" [ref=e1949] [cursor=pointer]:
+          - /url: https://github.com/dask/dask-blog/blob/gh-pages/README.md
+    - generic [ref=e1950]:
+      - link "Brand" [ref=e1952] [cursor=pointer]:
+        - /url: "#"
+      - link "Brand Guidelines" [ref=e1955] [cursor=pointer]:
+        - /url: /brand-guide
+    - generic [ref=e1956]:
+      - link "Github icon go to github page" [ref=e1957] [cursor=pointer]:
+        - /url: https://github.com/dask/dask
+        - img "Github icon" [ref=e1958]
+        - generic [ref=e1959]: go to github page
+      - link "Twitter icon go to twitter page" [ref=e1960] [cursor=pointer]:
+        - /url: https://twitter.com/dask_dev
+        - img "Twitter icon" [ref=e1961]
+        - generic [ref=e1962]: go to twitter page
+      - link "YouTube icon go to youtube page" [ref=e1963] [cursor=pointer]:
+        - /url: https://www.youtube.com/c/Dask-dev
+        - img "YouTube icon" [ref=e1964]
+        - generic [ref=e1965]: go to youtube page
+      - link "Stack Overflow icon go to stackoverflow. page" [ref=e1966] [cursor=pointer]:
+        - /url: https://stackoverflow.com/questions/tagged/dask
+        - img "Stack Overflow icon" [ref=e1967]
+        - generic [ref=e1968]: go to stackoverflow. page
+      - link "Chat icon go to dask discourse group page" [ref=e1969] [cursor=pointer]:
+        - /url: https://dask.discourse.group
+        - img "Chat icon" [ref=e1970]
+        - generic [ref=e1971]: go to dask discourse group page
+    - paragraph [ref=e1973]: Copyright © 2026 Dask core developers. New-BSD Licensed.

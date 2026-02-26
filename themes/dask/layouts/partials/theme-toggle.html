@@ -1,0 +1,25 @@
+<button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode" title="Toggle dark mode">
+  <span class="theme-toggle-icon" aria-hidden="true"></span>
+</button>
+<script>
+(function() {
+  var btn = document.getElementById('theme-toggle');
+  var icon = btn.querySelector('.theme-toggle-icon');
+  function getTheme() {
+    var saved = localStorage.getItem('theme');
+    if (saved) return saved;
+    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+  }
+  function updateIcon(theme) {
+    icon.textContent = theme === 'dark' ? '\u2600\uFE0F' : '\uD83C\uDF19';
+  }
+  updateIcon(getTheme());
+  btn.addEventListener('click', function() {
+    var current = getTheme();
+    var next = current === 'dark' ? 'light' : 'dark';
+    document.documentElement.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+    updateIcon(next);
+  });
+})();
+</script>

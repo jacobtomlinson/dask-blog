@@ -1,0 +1,623 @@
+- generic [active] [ref=e1]:
+  - generic [ref=e4]:
+    - link "Dask Working Notes" [ref=e5] [cursor=pointer]:
+      - /url: /
+    - list [ref=e6]:
+      - listitem [ref=e7]:
+        - link "Documentation" [ref=e8] [cursor=pointer]:
+          - /url: /documentation
+      - listitem [ref=e9]:
+        - link "Tags" [ref=e10] [cursor=pointer]:
+          - /url: /tags
+  - generic [ref=e11]:
+    - generic [ref=e12]:
+      - heading "Dask Working Notes" [level=1] [ref=e14]
+      - list [ref=e17]:
+        - listitem [ref=e18]:
+          - link "Improving GroupBy.map with Dask and Xarray" [ref=e19] [cursor=pointer]:
+            - /url: /2024/11/21/dask-detrending
+          - text: ": 21 Nov 2024"
+        - listitem [ref=e20]:
+          - link "Dask DataFrame is Fast Now" [ref=e21] [cursor=pointer]:
+            - /url: /2024/05/30/dask-is-fast
+          - text: ": 30 May 2024"
+        - listitem [ref=e22]:
+          - link "High Level Query Optimization in Dask" [ref=e23] [cursor=pointer]:
+            - /url: /2023/08/25/dask-expr-introduction
+          - text: ": 25 Aug 2023"
+        - listitem [ref=e24]:
+          - link "Upstream testing in Dask" [ref=e25] [cursor=pointer]:
+            - /url: /2023/04/18/dask-upstream-testing
+          - text: ": 18 Apr 2023"
+        - listitem [ref=e26]:
+          - link "Do you need consistent environments between the client, scheduler and workers?" [ref=e27] [cursor=pointer]:
+            - /url: /2023/04/14/scheduler-environment-requirements
+          - text: ": 14 Apr 2023"
+        - listitem [ref=e28]:
+          - link "Deep Dive into creating a Dask DataFrame Collection with from_map" [ref=e29] [cursor=pointer]:
+            - /url: /2023/04/12/from-map
+          - text: ": 12 Apr 2023"
+        - listitem [ref=e30]:
+          - link "Shuffling large data at constant memory in Dask" [ref=e31] [cursor=pointer]:
+            - /url: /2023/03/15/shuffling-large-data-at-constant-memory
+          - text: ": 15 Mar 2023"
+        - listitem [ref=e32]:
+          - link "Managing dask workloads with Flyte" [ref=e33] [cursor=pointer]:
+            - /url: /2023/02/13/dask-on-flyte
+          - text: ": 13 Feb 2023"
+        - listitem [ref=e34]:
+          - link "Easy CPU/GPU Arrays and Dataframes" [ref=e35] [cursor=pointer]:
+            - /url: /2023/02/02/easy-cpu-gpu
+          - text: ": 02 Feb 2023"
+        - listitem [ref=e36]:
+          - link "Dask Demo Day November 2022" [ref=e37] [cursor=pointer]:
+            - /url: /2022/11/21/november-demo-day
+          - text: ": 21 Nov 2022"
+        - listitem [ref=e38]:
+          - link "Reducing memory usage in Dask workloads by 80%" [ref=e39] [cursor=pointer]:
+            - /url: /2022/11/15/queuing
+          - text: ": 15 Nov 2022"
+        - listitem [ref=e40]:
+          - link "Dask Kubernetes Operator" [ref=e41] [cursor=pointer]:
+            - /url: /2022/11/09/dask-kubernetes-operator
+          - text: ": 09 Nov 2022"
+        - listitem [ref=e42]:
+          - link "Understanding Dask’s meta keyword argument" [ref=e43] [cursor=pointer]:
+            - /url: /2022/08/09/understanding-meta-keyword-argument
+          - text: ": 09 Aug 2022"
+        - listitem [ref=e44]:
+          - link "Data Proximate Computation on a Dask Cluster Distributed Between Data Centres" [ref=e45] [cursor=pointer]:
+            - /url: /2022/07/19/dask-multi-cloud
+          - text: ": 19 Jul 2022"
+        - listitem [ref=e46]:
+          - link "Documentation Framework" [ref=e47] [cursor=pointer]:
+            - /url: /2022/07/15/documentation-framework
+          - text: ": 15 Jul 2022"
+        - listitem [ref=e48]:
+          - link "How to run different worker types with the Dask Helm Chart" [ref=e49] [cursor=pointer]:
+            - /url: /2022/02/17/helm-multiple-worker-groups
+          - text: ": 17 Feb 2022"
+        - listitem [ref=e50]:
+          - link "Reflections on one year as the Dask life science fellow" [ref=e51] [cursor=pointer]:
+            - /url: /2021/12/15/dask-fellow-reflections
+          - text: ": 15 Dec 2021"
+        - listitem [ref=e52]:
+          - link "Mosaic Image Fusion" [ref=e53] [cursor=pointer]:
+            - /url: /2021/12/01/mosaic-fusion
+          - text: ": 01 Dec 2021"
+        - listitem [ref=e54]:
+          - link "Choosing good chunk sizes in Dask" [ref=e55] [cursor=pointer]:
+            - /url: /2021/11/02/choosing-dask-chunk-sizes
+          - text: ": 02 Nov 2021"
+        - listitem [ref=e56]:
+          - link "CZI EOSS Update" [ref=e57] [cursor=pointer]:
+            - /url: /2021/10/20/czi-eoss-update
+          - text: ": 20 Oct 2021"
+        - listitem [ref=e58]:
+          - link "2021 Dask User Survey" [ref=e59] [cursor=pointer]:
+            - /url: /2021/09/15/user-survey
+          - text: ": 15 Sep 2021"
+        - listitem [ref=e60]:
+          - link "Google Summer of Code 2021 - Dask Project" [ref=e61] [cursor=pointer]:
+            - /url: /2021/08/23/gsoc-2021-project
+          - text: ": 23 Aug 2021"
+        - listitem [ref=e62]:
+          - link "High Level Graphs update" [ref=e63] [cursor=pointer]:
+            - /url: /2021/07/07/high-level-graphs
+          - text: ": 07 Jul 2021"
+        - listitem [ref=e64]:
+          - link "Ragged output, how to handle awkward shaped results" [ref=e65] [cursor=pointer]:
+            - /url: /2021/07/02/ragged-output
+          - text: ": 02 Jul 2021"
+        - listitem [ref=e66]:
+          - link "Dask Down Under" [ref=e67] [cursor=pointer]:
+            - /url: /2021/06/25/dask-down-under
+          - text: ": 25 Jun 2021"
+        - listitem [ref=e68]:
+          - link "Dask Survey 2021, early anecdotes" [ref=e69] [cursor=pointer]:
+            - /url: /2021/06/18/early-survey
+          - text: ": 18 Jun 2021"
+        - listitem [ref=e70]:
+          - link "The evolution of a Dask Distributed user" [ref=e71] [cursor=pointer]:
+            - /url: /2021/06/01/dask-distributed-user-journey
+          - text: ": 01 Jun 2021"
+        - listitem [ref=e72]:
+          - link "The 2021 Dask User Survey is out now" [ref=e73] [cursor=pointer]:
+            - /url: /2021/05/25/user-survey
+          - text: ": 25 May 2021"
+        - listitem [ref=e74]:
+          - link "Life sciences at the 2021 Dask Summit" [ref=e75] [cursor=pointer]:
+            - /url: /2021/05/24/life-science-summit-workshop
+          - text: ": 24 May 2021"
+        - listitem [ref=e76]:
+          - link "Stability of the Dask library" [ref=e77] [cursor=pointer]:
+            - /url: /2021/05/21/stability
+          - text: ": 21 May 2021"
+        - listitem [ref=e78]:
+          - link "Skeleton analysis" [ref=e79] [cursor=pointer]:
+            - /url: /2021/05/07/skeleton-analysis
+          - text: ": 07 May 2021"
+        - listitem [ref=e80]:
+          - link "Dask with PyTorch for large scale image analysis" [ref=e81] [cursor=pointer]:
+            - /url: /2021/03/29/apply-pretrained-pytorch-model
+          - text: ": 29 Mar 2021"
+        - listitem [ref=e82]:
+          - link "Image segmentation with Dask" [ref=e83] [cursor=pointer]:
+            - /url: /2021/03/19/image-segmentation
+          - text: ": 19 Mar 2021"
+        - listitem [ref=e84]:
+          - link "Measuring Dask memory usage with dask-memusage" [ref=e85] [cursor=pointer]:
+            - /url: /2021/03/11/dask_memory_usage
+          - text: ": 11 Mar 2021"
+        - listitem [ref=e86]:
+          - link "Getting to know the life science community" [ref=e87] [cursor=pointer]:
+            - /url: /2021/03/04/the-life-science-community
+          - text: ": 04 Mar 2021"
+        - listitem [ref=e88]:
+          - link "Dask User Summit 2021" [ref=e89] [cursor=pointer]:
+            - /url: /2021/03/03/summit
+          - text: ": 03 Mar 2021"
+        - listitem [ref=e90]:
+          - link "Image Analysis Redux" [ref=e91] [cursor=pointer]:
+            - /url: /2020/11/12/deconvolution
+          - text: ": 12 Nov 2020"
+        - listitem [ref=e92]:
+          - link "2020 Dask User Survey" [ref=e93] [cursor=pointer]:
+            - /url: /2020/09/22/user_survey
+          - text: ": 22 Sep 2020"
+        - listitem [ref=e94]:
+          - link "Announcing the DaskHub Helm Chart" [ref=e95] [cursor=pointer]:
+            - /url: /2020/08/31/helm_daskhub
+          - text: ": 31 Aug 2020"
+        - listitem [ref=e96]:
+          - link "Running tutorials" [ref=e97] [cursor=pointer]:
+            - /url: /2020/08/21/running-tutorials
+          - text: ": 21 Aug 2020"
+        - listitem [ref=e98]:
+          - link "Comparing Dask-ML and Ray Tune's Model Selection Algorithms" [ref=e99] [cursor=pointer]:
+            - /url: /2020/08/06/ray-tune
+          - text: ": 06 Aug 2020"
+        - listitem [ref=e100]:
+          - link "Configuring a Distributed Dask Cluster" [ref=e101] [cursor=pointer]:
+            - /url: /2020/07/30/beginners-config
+          - text: ": 30 Jul 2020"
+        - listitem [ref=e102]:
+          - link "The current state of distributed Dask clusters" [ref=e103] [cursor=pointer]:
+            - /url: /2020/07/23/current-state-of-distributed-dask-clusters
+          - text: ": 23 Jul 2020"
+        - listitem [ref=e104]:
+          - link "Faster Scheduling" [ref=e105] [cursor=pointer]:
+            - /url: /2020/07/21/faster-scheduling
+          - text: ": 21 Jul 2020"
+        - listitem [ref=e106]:
+          - link "Last Year in Review" [ref=e107] [cursor=pointer]:
+            - /url: /2020/07/17/scipy-2020-maintainers-track
+          - text: ": 17 Jul 2020"
+        - listitem [ref=e108]:
+          - link "Large SVDs" [ref=e109] [cursor=pointer]:
+            - /url: /2020/05/13/large-svds
+          - text: ": 13 May 2020"
+        - listitem [ref=e110]:
+          - link "Dask Summit" [ref=e111] [cursor=pointer]:
+            - /url: /2020/04/28/dask-summit
+          - text: ": 28 Apr 2020"
+        - listitem [ref=e112]:
+          - link "Estimating Users" [ref=e113] [cursor=pointer]:
+            - /url: /2020/01/14/estimating-users
+          - text: ": 14 Jan 2020"
+        - listitem [ref=e114]:
+          - link "Dask Deployment Updates" [ref=e115] [cursor=pointer]:
+            - /url: /2019/11/01/deployment-updates
+          - text: ": 01 Nov 2019"
+        - listitem [ref=e116]:
+          - link "DataFrame Groupby Aggregations" [ref=e117] [cursor=pointer]:
+            - /url: /2019/10/08/df-groupby
+          - text: ": 08 Oct 2019"
+        - listitem [ref=e118]:
+          - link "Better and faster hyperparameter optimization with Dask" [ref=e119] [cursor=pointer]:
+            - /url: /2019/09/30/dask-hyperparam-opt
+          - text: ": 30 Sep 2019"
+        - listitem [ref=e120]:
+          - link "Co-locating a Jupyter Server and Dask Scheduler" [ref=e121] [cursor=pointer]:
+            - /url: /2019/09/13/jupyter-on-dask
+          - text: ": 13 Sep 2019"
+        - listitem [ref=e122]:
+          - 'link "Dask on HPC: a case study" [ref=e123] [cursor=pointer]':
+            - /url: /2019/08/28/dask-on-summit
+          - text: ": 28 Aug 2019"
+        - listitem [ref=e124]:
+          - link "Dask and ITK for large scale image analysis" [ref=e125] [cursor=pointer]:
+            - /url: /2019/08/09/image-itk
+          - text: ": 09 Aug 2019"
+        - listitem [ref=e126]:
+          - link "2019 Dask User Survey" [ref=e127] [cursor=pointer]:
+            - /url: /2019/08/05/user-survey
+          - text: ": 05 Aug 2019"
+        - listitem [ref=e128]:
+          - link "Dask Release 2.2.0" [ref=e129] [cursor=pointer]:
+            - /url: /2019/08/02/dask-2.2
+          - text: ": 02 Aug 2019"
+        - listitem [ref=e130]:
+          - link "Extracting fsspec from Dask" [ref=e131] [cursor=pointer]:
+            - /url: /2019/07/23/extracting-fsspec-from-dask
+          - text: ": 23 Jul 2019"
+        - listitem [ref=e132]:
+          - link "Dask Release 2.0" [ref=e133] [cursor=pointer]:
+            - /url: /2019/06/22/dask-2.0
+          - text: ": 22 Jun 2019"
+        - listitem [ref=e134]:
+          - link "Load Large Image Data with Dask Array" [ref=e135] [cursor=pointer]:
+            - /url: /2019/06/20/load-image-data
+          - text: ": 20 Jun 2019"
+        - listitem [ref=e136]:
+          - 'link "Python and GPUs: A Status Update" [ref=e137] [cursor=pointer]':
+            - /url: /2019/06/19/python-gpus-status-update
+          - text: ": 19 Jun 2019"
+        - listitem [ref=e138]:
+          - link "Dask on HPC" [ref=e139] [cursor=pointer]:
+            - /url: /2019/06/12/dask-on-hpc
+          - text: ": 12 Jun 2019"
+        - listitem [ref=e140]:
+          - link "Experiments in High Performance Networking with UCX and DGX" [ref=e141] [cursor=pointer]:
+            - /url: /2019/06/09/ucx-dgx
+          - text: ": 09 Jun 2019"
+        - listitem [ref=e142]:
+          - link "Composing Dask Array with Numba Stencils" [ref=e143] [cursor=pointer]:
+            - /url: /2019/04/09/numba-stencil
+          - text: ": 09 Apr 2019"
+        - listitem [ref=e144]:
+          - link "cuML and Dask hyperparameter optimization" [ref=e145] [cursor=pointer]:
+            - /url: /2019/03/27/dask-cuml
+          - text: ": 27 Mar 2019"
+        - listitem [ref=e146]:
+          - link "Dask and the __array_function__ protocol" [ref=e147] [cursor=pointer]:
+            - /url: /2019/03/18/dask-nep18
+          - text: ": 18 Mar 2019"
+        - listitem [ref=e148]:
+          - link "Building GPU Groupby-Aggregations for Dask" [ref=e149] [cursor=pointer]:
+            - /url: /2019/03/04/building-gpu-groupbys
+          - text: ": 04 Mar 2019"
+        - listitem [ref=e150]:
+          - link "Running Dask and MPI programs together" [ref=e151] [cursor=pointer]:
+            - /url: /2019/01/31/dask-mpi-experiment
+          - text: ": 31 Jan 2019"
+        - listitem [ref=e152]:
+          - link "Single-Node Multi-GPU Dataframe Joins" [ref=e153] [cursor=pointer]:
+            - /url: /2019/01/29/cudf-joins
+          - text: ": 29 Jan 2019"
+        - listitem [ref=e154]:
+          - link "Dask Release 1.1.0" [ref=e155] [cursor=pointer]:
+            - /url: /2019/01/23/dask-1.1.0
+          - text: ": 23 Jan 2019"
+        - listitem [ref=e156]:
+          - link "Extension Arrays in Dask DataFrame" [ref=e157] [cursor=pointer]:
+            - /url: /2019/01/22/dask-extension-arrays
+          - text: ": 22 Jan 2019"
+        - listitem [ref=e158]:
+          - 'link "Dask, Pandas, and GPUs: first steps" [ref=e159] [cursor=pointer]':
+            - /url: /2019/01/13/dask-cudf-first-steps
+          - text: ": 13 Jan 2019"
+        - listitem [ref=e160]:
+          - link "GPU Dask Arrays, first steps" [ref=e161] [cursor=pointer]:
+            - /url: /2019/01/03/dask-array-gpus-first-steps
+          - text: ": 03 Jan 2019"
+        - listitem [ref=e162]:
+          - link "Dask Version 1.0" [ref=e163] [cursor=pointer]:
+            - /url: /2018/11/29/version-1.0
+          - text: ": 29 Nov 2018"
+        - listitem [ref=e164]:
+          - link "Dask-jobqueue" [ref=e165] [cursor=pointer]:
+            - /url: /2018/10/08/Dask-Jobqueue
+          - text: ": 08 Oct 2018"
+        - listitem [ref=e166]:
+          - link "Refactor Documentation" [ref=e167] [cursor=pointer]:
+            - /url: /2018/09/27/docs-refactor
+          - text: ": 27 Sep 2018"
+        - listitem [ref=e168]:
+          - link "Dask Development Log" [ref=e169] [cursor=pointer]:
+            - /url: /2018/09/17/dask-dev
+          - text: ": 17 Sep 2018"
+        - listitem [ref=e170]:
+          - link "Dask Release 0.19.0" [ref=e171] [cursor=pointer]:
+            - /url: /2018/09/05/dask-0.19.0
+          - text: ": 05 Sep 2018"
+        - listitem [ref=e172]:
+          - link "High level performance of Pandas, Dask, Spark, and Arrow" [ref=e173] [cursor=pointer]:
+            - /url: /2018/08/28/dataframe-performance-high-level
+          - text: ": 28 Aug 2018"
+        - listitem [ref=e174]:
+          - link "Building SAGA optimization for Dask arrays" [ref=e175] [cursor=pointer]:
+            - /url: /2018/08/07/incremental-saga
+          - text: ": 07 Aug 2018"
+        - listitem [ref=e176]:
+          - link "Dask Development Log" [ref=e177] [cursor=pointer]:
+            - /url: /2018/08/02/dask-dev
+          - text: ": 02 Aug 2018"
+        - listitem [ref=e178]:
+          - link "Pickle isn't slow, it's a protocol" [ref=e179] [cursor=pointer]:
+            - /url: /2018/07/23/protocols-pickle
+          - text: ": 23 Jul 2018"
+        - listitem [ref=e180]:
+          - link "Dask Development Log, Scipy 2018" [ref=e181] [cursor=pointer]:
+            - /url: /2018/07/17/dask-dev
+          - text: ": 17 Jul 2018"
+        - listitem [ref=e182]:
+          - link "Who uses Dask?" [ref=e183] [cursor=pointer]:
+            - /url: /2018/07/16/dask-stories
+          - text: ": 16 Jul 2018"
+        - listitem [ref=e184]:
+          - link "Dask Development Log" [ref=e185] [cursor=pointer]:
+            - /url: /2018/07/08/dask-dev
+          - text: ": 08 Jul 2018"
+        - listitem [ref=e186]:
+          - link "Dask Scaling Limits" [ref=e187] [cursor=pointer]:
+            - /url: /2018/06/26/dask-scaling-limits
+          - text: ": 26 Jun 2018"
+        - listitem [ref=e188]:
+          - link "Dask Release 0.18.0" [ref=e189] [cursor=pointer]:
+            - /url: /2018/06/14/dask-0.18.0
+          - text: ": 14 Jun 2018"
+        - listitem [ref=e190]:
+          - link "Beyond Numpy Arrays in Python" [ref=e191] [cursor=pointer]:
+            - /url: /2018/05/27/beyond-numpy
+          - text: ": 27 May 2018"
+        - listitem [ref=e192]:
+          - link "Dask Release 0.17.2" [ref=e193] [cursor=pointer]:
+            - /url: /2018/03/21/dask-0.17.2
+          - text: ": 21 Mar 2018"
+        - listitem [ref=e194]:
+          - link "Craft Minimal Bug Reports" [ref=e195] [cursor=pointer]:
+            - /url: /2018/02/28/minimal-bug-reports
+          - text: ": 28 Feb 2018"
+        - listitem [ref=e196]:
+          - link "Dask Release 0.17.0" [ref=e197] [cursor=pointer]:
+            - /url: /2018/02/12/dask-0.17.0
+          - text: ": 12 Feb 2018"
+        - listitem [ref=e198]:
+          - link "Credit Modeling with Dask" [ref=e199] [cursor=pointer]:
+            - /url: /2018/02/09/credit-models-with-dask
+          - text: ": 09 Feb 2018"
+        - listitem [ref=e200]:
+          - 'link "Pangeo: JupyterHub, Dask, and XArray on the Cloud" [ref=e201] [cursor=pointer]':
+            - /url: /2018/01/22/pangeo-2
+          - text: ": 22 Jan 2018"
+        - listitem [ref=e202]:
+          - link "Dask Development Log" [ref=e203] [cursor=pointer]:
+            - /url: /2017/12/06/dask-dev-9
+          - text: ": 06 Dec 2017"
+        - listitem [ref=e204]:
+          - link "Dask Release 0.16.0" [ref=e205] [cursor=pointer]:
+            - /url: /2017/11/21/dask-0.16.0
+          - text: ": 21 Nov 2017"
+        - listitem [ref=e206]:
+          - link "Optimizing Data Structure Access in Python" [ref=e207] [cursor=pointer]:
+            - /url: /2017/11/03/data-structure-benchmark
+          - text: ": 03 Nov 2017"
+        - listitem [ref=e208]:
+          - link "Streaming Dataframes" [ref=e209] [cursor=pointer]:
+            - /url: /2017/10/16/streaming-dataframes-1
+          - text: ": 16 Oct 2017"
+        - listitem [ref=e210]:
+          - link "Notes on Kafka in Python" [ref=e211] [cursor=pointer]:
+            - /url: /2017/10/10/kafka-python
+          - text: ": 10 Oct 2017"
+        - listitem [ref=e212]:
+          - link "Dask Release 0.15.3" [ref=e213] [cursor=pointer]:
+            - /url: /2017/09/24/dask-0.15.3
+          - text: ": 24 Sep 2017"
+        - listitem [ref=e214]:
+          - link "Fast GeoSpatial Analysis in Python" [ref=e215] [cursor=pointer]:
+            - /url: /2017/09/21/accelerating-geopandas-1
+          - text: ": 21 Sep 2017"
+        - listitem [ref=e216]:
+          - link "Dask on HPC - Initial Work" [ref=e217] [cursor=pointer]:
+            - /url: /2017/09/18/pangeo-1
+          - text: ": 18 Sep 2017"
+        - listitem [ref=e218]:
+          - link "Dask Release 0.15.2" [ref=e219] [cursor=pointer]:
+            - /url: /2017/08/30/dask-0.15.2
+          - text: ": 30 Aug 2017"
+        - listitem [ref=e220]:
+          - link "Scikit-Image and Dask Performance" [ref=e221] [cursor=pointer]:
+            - /url: /2017/07/18/skimage-dask
+          - text: ": 18 Jul 2017"
+        - listitem [ref=e222]:
+          - link "Dask Benchmarks" [ref=e223] [cursor=pointer]:
+            - /url: /2017/07/03/scaling
+          - text: ": 03 Jul 2017"
+        - listitem [ref=e224]:
+          - link "Use Apache Parquet" [ref=e225] [cursor=pointer]:
+            - /url: /2017/06/28/use-parquet
+          - text: ": 28 Jun 2017"
+        - listitem [ref=e226]:
+          - link "Dask Release 0.15.0" [ref=e227] [cursor=pointer]:
+            - /url: /2017/06/15/dask-0.15.0
+          - text: ": 15 Jun 2017"
+        - listitem [ref=e228]:
+          - link "Dask Release 0.14.3" [ref=e229] [cursor=pointer]:
+            - /url: /2017/05/08/dask-0.14.3
+          - text: ": 08 May 2017"
+        - listitem [ref=e230]:
+          - link "Dask Development Log" [ref=e231] [cursor=pointer]:
+            - /url: /2017/04/28/dask-dev-8
+          - text: ": 28 Apr 2017"
+        - listitem [ref=e232]:
+          - link "Asynchronous Optimization Algorithms with Dask" [ref=e233] [cursor=pointer]:
+            - /url: /2017/04/19/dask-glm-2
+          - text: ": 19 Apr 2017"
+        - listitem [ref=e234]:
+          - link "Dask and Pandas and XGBoost" [ref=e235] [cursor=pointer]:
+            - /url: /2017/03/28/dask-xgboost
+          - text: ": 28 Mar 2017"
+        - listitem [ref=e236]:
+          - link "Dask Release 0.14.1" [ref=e237] [cursor=pointer]:
+            - /url: /2017/03/23/dask-0.14.1
+          - text: ": 23 Mar 2017"
+        - listitem [ref=e238]:
+          - link "Developing Convex Optimization Algorithms in Dask" [ref=e239] [cursor=pointer]:
+            - /url: /2017/03/22/dask-glm-1
+          - text: ": 22 Mar 2017"
+        - listitem [ref=e240]:
+          - link "Dask Release 0.14.0" [ref=e241] [cursor=pointer]:
+            - /url: /2017/02/27/dask-0.14.0
+          - text: ": 27 Feb 2017"
+        - listitem [ref=e242]:
+          - link "Dask Development Log" [ref=e243] [cursor=pointer]:
+            - /url: /2017/02/20/dask-dev-7
+          - text: ": 20 Feb 2017"
+        - listitem [ref=e244]:
+          - link "Experiment with Dask and TensorFlow" [ref=e245] [cursor=pointer]:
+            - /url: /2017/02/11/dask-tensorflow
+          - text: ": 11 Feb 2017"
+        - listitem [ref=e246]:
+          - link "Two Easy Ways to Use Scikit Learn and Dask" [ref=e247] [cursor=pointer]:
+            - /url: /2017/02/07/dask-sklearn-simple
+          - text: ": 07 Feb 2017"
+        - listitem [ref=e248]:
+          - link "Dask Development Log" [ref=e249] [cursor=pointer]:
+            - /url: /2017/01/30/dask-dev-6
+          - text: ": 30 Jan 2017"
+        - listitem [ref=e250]:
+          - link "Custom Parallel Algorithms on a Cluster with Dask" [ref=e251] [cursor=pointer]:
+            - /url: /2017/01/24/dask-custom
+          - text: ": 24 Jan 2017"
+        - listitem [ref=e252]:
+          - link "Dask Development Log" [ref=e253] [cursor=pointer]:
+            - /url: /2017/01/18/dask-dev-5
+          - text: ": 18 Jan 2017"
+        - listitem [ref=e254]:
+          - link "Distributed NumPy on a Cluster with Dask Arrays" [ref=e255] [cursor=pointer]:
+            - /url: /2017/01/17/dask-images
+          - text: ": 17 Jan 2017"
+        - listitem [ref=e256]:
+          - link "Distributed Pandas on a Cluster with Dask DataFrames" [ref=e257] [cursor=pointer]:
+            - /url: /2017/01/12/dask-dataframes
+          - text: ": 12 Jan 2017"
+        - listitem [ref=e258]:
+          - link "Dask Release 0.13.0" [ref=e259] [cursor=pointer]:
+            - /url: /2017/01/03/dask-0.13.0
+          - text: ": 03 Jan 2017"
+        - listitem [ref=e260]:
+          - link "Dask Development Log" [ref=e261] [cursor=pointer]:
+            - /url: /2016/12/24/dask-dev-4
+          - text: ": 24 Dec 2016"
+        - listitem [ref=e262]:
+          - link "Dask Development Log" [ref=e263] [cursor=pointer]:
+            - /url: /2016/12/18/dask-dev-3
+          - text: ": 18 Dec 2016"
+        - listitem [ref=e264]:
+          - link "Dask Development Log" [ref=e265] [cursor=pointer]:
+            - /url: /2016/12/12/dask-dev-2
+          - text: ": 12 Dec 2016"
+        - listitem [ref=e266]:
+          - link "Dask Development Log" [ref=e267] [cursor=pointer]:
+            - /url: /2016/12/05/dask-dev-1
+          - text: ": 05 Dec 2016"
+        - listitem [ref=e268]:
+          - link "Dask Cluster Deployments" [ref=e269] [cursor=pointer]:
+            - /url: /2016/09/22/cluster-deployments
+          - text: ": 22 Sep 2016"
+        - listitem [ref=e270]:
+          - link "Dask and Celery" [ref=e271] [cursor=pointer]:
+            - /url: /2016/09/13/dask-and-celery
+          - text: ": 13 Sep 2016"
+        - listitem [ref=e272]:
+          - link "Dask Distributed Release 1.13.0" [ref=e273] [cursor=pointer]:
+            - /url: /2016/09/12/dask-distributed-release-1.13.0
+          - text: ": 12 Sep 2016"
+        - listitem [ref=e274]:
+          - link "Dask for Institutions" [ref=e275] [cursor=pointer]:
+            - /url: /2016/08/16/dask-for-institutions
+          - text: ": 16 Aug 2016"
+        - listitem [ref=e276]:
+          - link "Dask and Scikit-Learn -- Model Parallelism" [ref=e277] [cursor=pointer]:
+            - /url: /2016/07/12/dask-learn-part-1
+          - text: ": 12 Jul 2016"
+        - listitem [ref=e278]:
+          - link "Ad Hoc Distributed Random Forests" [ref=e279] [cursor=pointer]:
+            - /url: /2016/04/20/dask-distributed-part-5
+          - text: ": 20 Apr 2016"
+        - listitem [ref=e280]:
+          - link "Fast Message Serialization" [ref=e281] [cursor=pointer]:
+            - /url: /2016/04/14/dask-distributed-optimizing-protocol
+          - text: ": 14 Apr 2016"
+        - listitem [ref=e282]:
+          - link "Distributed Dask Arrays" [ref=e283] [cursor=pointer]:
+            - /url: /2016/02/26/dask-distributed-part-3
+          - text: ": 26 Feb 2016"
+        - listitem [ref=e284]:
+          - link "Pandas on HDFS with Dask Dataframes" [ref=e285] [cursor=pointer]:
+            - /url: /2016/02/22/dask-distributed-part-2
+          - text: ": 22 Feb 2016"
+        - listitem [ref=e286]:
+          - link "Introducing Dask distributed" [ref=e287] [cursor=pointer]:
+            - /url: /2016/02/17/dask-distributed-part1
+          - text: ": 17 Feb 2016"
+        - listitem [ref=e288]:
+          - link "Dask is one year old" [ref=e289] [cursor=pointer]:
+            - /url: /2015/12/21/dask-year
+          - text: ": 21 Dec 2015"
+        - listitem [ref=e290]:
+          - link "Distributed Prototype" [ref=e291] [cursor=pointer]:
+            - /url: /2015/10/09/Distributed
+          - text: ": 09 Oct 2015"
+        - listitem [ref=e292]:
+          - link "Caching" [ref=e293] [cursor=pointer]:
+            - /url: /2015/08/03/Caching
+          - text: ": 03 Aug 2015"
+        - listitem [ref=e294]:
+          - link "Custom Parallel Workflows" [ref=e295] [cursor=pointer]:
+            - /url: /2015/07/23/Imperative
+          - text: ": 23 Jul 2015"
+        - listitem [ref=e296]:
+          - link "Write Complex Parallel Algorithms" [ref=e297] [cursor=pointer]:
+            - /url: /2015/06/26/Complex-Graphs
+          - text: ": 26 Jun 2015"
+        - listitem [ref=e298]:
+          - link "Distributed Scheduling" [ref=e299] [cursor=pointer]:
+            - /url: /2015/06/23/Distributed
+          - text: ": 23 Jun 2015"
+        - listitem [ref=e300]:
+          - link "State of Dask" [ref=e301] [cursor=pointer]:
+            - /url: /2015/05/19/State-of-Dask
+          - text: ": 19 May 2015"
+        - listitem [ref=e302]:
+          - link "Towards Out-of-core DataFrames" [ref=e303] [cursor=pointer]:
+            - /url: /2015/03/11/Towards-OOC-Frame
+          - text: ": 11 Mar 2015"
+        - listitem [ref=e304]:
+          - link "Towards Out-of-core ND-Arrays -- Dask + Toolz = Bag" [ref=e305] [cursor=pointer]:
+            - /url: /2015/02/17/Towards-OOC-Bag
+          - text: ": 17 Feb 2015"
+        - listitem [ref=e306]:
+          - link "Towards Out-of-core ND-Arrays -- Slicing and Stacking" [ref=e307] [cursor=pointer]:
+            - /url: /2015/02/13/Towards-OOC-Slicing-and-Stacking
+          - text: ": 13 Feb 2015"
+        - listitem [ref=e308]:
+          - link "Towards Out-of-core ND-Arrays -- Spilling to Disk" [ref=e309] [cursor=pointer]:
+            - /url: /2015/01/16/Towards-OOC-SpillToDisk
+          - text: ": 16 Jan 2015"
+        - listitem [ref=e310]:
+          - link "Towards Out-of-core ND-Arrays -- Benchmark MatMul" [ref=e311] [cursor=pointer]:
+            - /url: /2015/01/14/Towards-OOC-MatMul
+          - text: ": 14 Jan 2015"
+        - listitem [ref=e312]:
+          - link "Towards Out-of-core ND-Arrays -- Multi-core Scheduling" [ref=e313] [cursor=pointer]:
+            - /url: /2015/01/06/Towards-OOC-Scheduling
+          - text: ": 06 Jan 2015"
+        - listitem [ref=e314]:
+          - link "Towards Out-of-core ND-Arrays -- Frontend" [ref=e315] [cursor=pointer]:
+            - /url: /2014/12/30/Towards-OOC-Frontend
+          - text: ": 30 Dec 2014"
+        - listitem [ref=e316]:
+          - link "Towards Out-of-core ND-Arrays" [ref=e317] [cursor=pointer]:
+            - /url: /2014/12/27/Towards-OOC
+          - text: ": 27 Dec 2014"
+    - contentinfo [ref=e318]:
+      - paragraph [ref=e319]:
+        - text: ©
+        - link "Dask Developers" [ref=e320] [cursor=pointer]:
+          - /url: https://dask.org
+        - text: "2018."
+        - link "Atom Feed" [ref=e321] [cursor=pointer]:
+          - /url: /atom.xml

@@ -1,0 +1,246 @@
+- generic [active] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e3]:
+      - link "home" [ref=e4] [cursor=pointer]:
+        - /url: /
+        - img "Dask logo" [ref=e5]
+      - navigation [ref=e6]:
+        - button "Community" [ref=e8] [cursor=pointer]:
+          - generic [ref=e9]: 
+          - generic [ref=e10]: Community
+        - link "Blog" [ref=e11] [cursor=pointer]:
+          - /url: /blog
+        - link "Docs" [ref=e13] [cursor=pointer]:
+          - /url: https://docs.dask.org/en/stable/
+      - text: 
+  - heading "Blog" [level=1] [ref=e16]
+  - generic [ref=e18]:
+    - generic [ref=e21]:
+      - generic [ref=e22]:
+        - generic [ref=e23]: Filter
+        - form "Search Blogs" [ref=e24]:
+          - textbox "Search Blogs" [ref=e25]
+          - list [ref=e27]:
+            - listitem [ref=e28]:
+              - generic [ref=e29] [cursor=pointer]:
+                - checkbox "Community" [ref=e31]
+                - generic [ref=e32]: Community
+            - listitem [ref=e33]:
+              - generic [ref=e34] [cursor=pointer]:
+                - checkbox "Dask" [ref=e36]
+                - generic [ref=e37]: Dask
+            - listitem [ref=e38]:
+              - generic [ref=e39] [cursor=pointer]:
+                - checkbox "Kubernetes" [ref=e41]
+                - generic [ref=e42]: Kubernetes
+            - listitem [ref=e43]:
+              - generic [ref=e44] [cursor=pointer]:
+                - checkbox "Python" [ref=e46]
+                - generic [ref=e47]: Python
+            - listitem [ref=e48]:
+              - generic [ref=e49] [cursor=pointer]:
+                - checkbox "Release" [ref=e51]
+                - generic [ref=e52]: Release
+      - generic [ref=e53]:
+        - generic: 
+        - link "Contribute a Blog" [ref=e54] [cursor=pointer]:
+          - /url: https://github.com/dask/dask-blog/blob/gh-pages/README.md
+        - link "Atom Feed" [ref=e55] [cursor=pointer]:
+          - /url: https://blog.dask.org/atom.xml
+    - generic [ref=e56]:
+      - list [ref=e58]:
+        - listitem [ref=e59]:
+          - link "Dask DataFrame is Fast Now May 30, 2024 Read" [ref=e60] [cursor=pointer]:
+            - /url: https://blog.dask.org/2024/05/30/dask-is-fast
+            - heading "Dask DataFrame is Fast Now" [level=2] [ref=e62]
+            - generic [ref=e63]:
+              - generic [ref=e64]: May 30, 2024
+              - generic [ref=e65]: Read
+        - listitem [ref=e66]:
+          - link "High Level Query Optimization in Dask Aug 25, 2023 Read" [ref=e67] [cursor=pointer]:
+            - /url: https://blog.dask.org/2023/08/25/dask-expr-introduction
+            - heading "High Level Query Optimization in Dask" [level=2] [ref=e69]
+            - generic [ref=e70]:
+              - generic [ref=e71]: Aug 25, 2023
+              - generic [ref=e72]: Read
+        - listitem [ref=e73]:
+          - link "Upstream testing in Dask Apr 18, 2023 Read" [ref=e74] [cursor=pointer]:
+            - /url: https://blog.dask.org/2023/04/18/dask-upstream-testing
+            - heading "Upstream testing in Dask" [level=2] [ref=e76]
+            - generic [ref=e77]:
+              - generic [ref=e78]: Apr 18, 2023
+              - generic [ref=e79]: Read
+        - listitem [ref=e80]:
+          - link "Do you need consistent environments between the client, scheduler and workers? Apr 14, 2023 Read" [ref=e81] [cursor=pointer]:
+            - /url: https://blog.dask.org/2023/04/14/scheduler-environment-requirements
+            - heading "Do you need consistent environments between the client, scheduler and workers?" [level=2] [ref=e83]
+            - generic [ref=e84]:
+              - generic [ref=e85]: Apr 14, 2023
+              - generic [ref=e86]: Read
+        - listitem [ref=e87]:
+          - link "Deep Dive into creating a Dask DataFrame Collection with from_map Apr 12, 2023 Read" [ref=e88] [cursor=pointer]:
+            - /url: https://blog.dask.org/2023/04/12/from-map
+            - heading "Deep Dive into creating a Dask DataFrame Collection with from_map" [level=2] [ref=e90]
+            - generic [ref=e91]:
+              - generic [ref=e92]: Apr 12, 2023
+              - generic [ref=e93]: Read
+        - listitem [ref=e94]:
+          - link "Shuffling large data at constant memory in Dask Mar 15, 2023 Read" [ref=e95] [cursor=pointer]:
+            - /url: https://blog.dask.org/2023/03/15/shuffling-large-data-at-constant-memory
+            - heading "Shuffling large data at constant memory in Dask" [level=2] [ref=e97]
+            - generic [ref=e98]:
+              - generic [ref=e99]: Mar 15, 2023
+              - generic [ref=e100]: Read
+        - listitem [ref=e101]:
+          - link "Managing dask workloads with Flyte Feb 13, 2023 Read" [ref=e102] [cursor=pointer]:
+            - /url: https://blog.dask.org/2023/02/13/dask-on-flyte
+            - heading "Managing dask workloads with Flyte" [level=2] [ref=e104]
+            - generic [ref=e105]:
+              - generic [ref=e106]: Feb 13, 2023
+              - generic [ref=e107]: Read
+        - listitem [ref=e108]:
+          - link "Easy CPU/GPU Arrays and Dataframes Feb 2, 2023 Read" [ref=e109] [cursor=pointer]:
+            - /url: https://blog.dask.org/2023/02/02/easy-cpu-gpu
+            - heading "Easy CPU/GPU Arrays and Dataframes" [level=2] [ref=e111]
+            - generic [ref=e112]:
+              - generic [ref=e113]: Feb 2, 2023
+              - generic [ref=e114]: Read
+        - listitem [ref=e115]:
+          - link "Dask Demo Day November 2022 Nov 21, 2022 Read" [ref=e116] [cursor=pointer]:
+            - /url: https://blog.dask.org/2022/11/21/november-demo-day
+            - heading "Dask Demo Day November 2022" [level=2] [ref=e118]
+            - generic [ref=e119]:
+              - generic [ref=e120]: Nov 21, 2022
+              - generic [ref=e121]: Read
+        - listitem [ref=e122]:
+          - link "Reducing memory usage in Dask workloads by 80% Nov 15, 2022 Read" [ref=e123] [cursor=pointer]:
+            - /url: https://blog.dask.org/2022/11/15/queuing
+            - heading "Reducing memory usage in Dask workloads by 80%" [level=2] [ref=e125]
+            - generic [ref=e126]:
+              - generic [ref=e127]: Nov 15, 2022
+              - generic [ref=e128]: Read
+        - listitem [ref=e129]:
+          - link "Dask Kubernetes Operator Nov 9, 2022 Read" [ref=e130] [cursor=pointer]:
+            - /url: https://blog.dask.org/2022/11/09/dask-kubernetes-operator
+            - heading "Dask Kubernetes Operator" [level=2] [ref=e132]
+            - generic [ref=e133]:
+              - generic [ref=e134]: Nov 9, 2022
+              - generic [ref=e135]: Read
+        - listitem [ref=e136]:
+          - link "Understanding Dask’s meta keyword argument Aug 9, 2022 Read" [ref=e137] [cursor=pointer]:
+            - /url: https://blog.dask.org/2022/08/09/understanding-meta-keyword-argument
+            - heading "Understanding Dask’s meta keyword argument" [level=2] [ref=e139]
+            - generic [ref=e140]:
+              - generic [ref=e141]: Aug 9, 2022
+              - generic [ref=e142]: Read
+        - listitem [ref=e143]:
+          - link "Data Proximate Computation on a Dask Cluster Distributed Between Data Centres Jul 19, 2022 Read" [ref=e144] [cursor=pointer]:
+            - /url: https://blog.dask.org/2022/07/19/dask-multi-cloud
+            - heading "Data Proximate Computation on a Dask Cluster Distributed Between Data Centres" [level=2] [ref=e146]
+            - generic [ref=e147]:
+              - generic [ref=e148]: Jul 19, 2022
+              - generic [ref=e149]: Read
+        - listitem [ref=e150]:
+          - link "Documentation Framework Jul 15, 2022 Read" [ref=e151] [cursor=pointer]:
+            - /url: https://blog.dask.org/2022/07/15/documentation-framework
+            - heading "Documentation Framework" [level=2] [ref=e153]
+            - generic [ref=e154]:
+              - generic [ref=e155]: Jul 15, 2022
+              - generic [ref=e156]: Read
+        - listitem [ref=e157]:
+          - link "How to run different worker types with the Dask Helm Chart Feb 17, 2022 Read" [ref=e158] [cursor=pointer]:
+            - /url: https://blog.dask.org/2022/02/17/helm-multiple-worker-groups
+            - heading "How to run different worker types with the Dask Helm Chart" [level=2] [ref=e160]
+            - generic [ref=e161]:
+              - generic [ref=e162]: Feb 17, 2022
+              - generic [ref=e163]: Read
+        - listitem [ref=e164]:
+          - link "Reflections on one year as the Dask life science fellow Dec 15, 2021 Read" [ref=e165] [cursor=pointer]:
+            - /url: https://blog.dask.org/2021/12/15/dask-fellow-reflections
+            - heading "Reflections on one year as the Dask life science fellow" [level=2] [ref=e167]
+            - generic [ref=e168]:
+              - generic [ref=e169]: Dec 15, 2021
+              - generic [ref=e170]: Read
+        - listitem [ref=e171]:
+          - link "Mosaic Image Fusion Dec 1, 2021 Read" [ref=e172] [cursor=pointer]:
+            - /url: https://blog.dask.org/2021/12/01/mosaic-fusion
+            - heading "Mosaic Image Fusion" [level=2] [ref=e174]
+            - generic [ref=e175]:
+              - generic [ref=e176]: Dec 1, 2021
+              - generic [ref=e177]: Read
+        - listitem [ref=e178]:
+          - link "Choosing good chunk sizes in Dask Nov 2, 2021 Read" [ref=e179] [cursor=pointer]:
+            - /url: https://blog.dask.org/2021/11/02/choosing-dask-chunk-sizes
+            - heading "Choosing good chunk sizes in Dask" [level=2] [ref=e181]
+            - generic [ref=e182]:
+              - generic [ref=e183]: Nov 2, 2021
+              - generic [ref=e184]: Read
+        - listitem [ref=e185]:
+          - link "CZI EOSS Update Oct 20, 2021 Read" [ref=e186] [cursor=pointer]:
+            - /url: https://blog.dask.org/2021/10/20/czi-eoss-update
+            - heading "CZI EOSS Update" [level=2] [ref=e188]
+            - generic [ref=e189]:
+              - generic [ref=e190]: Oct 20, 2021
+              - generic [ref=e191]: Read
+        - listitem [ref=e192]:
+          - link "2021 Dask User Survey Sep 15, 2021 Read" [ref=e193] [cursor=pointer]:
+            - /url: https://blog.dask.org/2021/09/15/user-survey
+            - heading "2021 Dask User Survey" [level=2] [ref=e195]
+            - generic [ref=e196]:
+              - generic [ref=e197]: Sep 15, 2021
+              - generic [ref=e198]: Read
+      - link "Next" [ref=e200] [cursor=pointer]:
+        - /url: "#"
+  - generic [ref=e203]:
+    - link "Dask logo" [ref=e205] [cursor=pointer]:
+      - /url: /
+      - img "Dask logo" [ref=e206]
+    - generic [ref=e207]:
+      - generic [ref=e209]: Get Started
+      - link "Latest" [ref=e212] [cursor=pointer]:
+        - /url: https://docs.dask.org/en/stable/
+    - generic [ref=e213]:
+      - link "Community" [ref=e215] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e217]:
+        - link "Get Help" [ref=e218] [cursor=pointer]:
+          - /url: /get-help
+        - link "Powered By" [ref=e219] [cursor=pointer]:
+          - /url: /powered-by
+        - link "Demo Day" [ref=e220] [cursor=pointer]:
+          - /url: https://github.com/dask/community/issues/307
+    - generic [ref=e221]:
+      - link "Blog" [ref=e223] [cursor=pointer]:
+        - /url: "#"
+      - generic [ref=e225]:
+        - link "Dask Blog" [ref=e226] [cursor=pointer]:
+          - /url: /blog
+        - link "Contribute" [ref=e227] [cursor=pointer]:
+          - /url: https://github.com/dask/dask-blog/blob/gh-pages/README.md
+    - generic [ref=e228]:
+      - link "Brand" [ref=e230] [cursor=pointer]:
+        - /url: "#"
+      - link "Brand Guidelines" [ref=e233] [cursor=pointer]:
+        - /url: /brand-guide
+    - generic [ref=e234]:
+      - link "Github icon go to github page" [ref=e235] [cursor=pointer]:
+        - /url: https://github.com/dask/dask
+        - img "Github icon" [ref=e236]
+        - generic [ref=e237]: go to github page
+      - link "Twitter icon go to twitter page" [ref=e238] [cursor=pointer]:
+        - /url: https://twitter.com/dask_dev
+        - img "Twitter icon" [ref=e239]
+        - generic [ref=e240]: go to twitter page
+      - link "YouTube icon go to youtube page" [ref=e241] [cursor=pointer]:
+        - /url: https://www.youtube.com/c/Dask-dev
+        - img "YouTube icon" [ref=e242]
+        - generic [ref=e243]: go to youtube page
+      - link "Stack Overflow icon go to stackoverflow. page" [ref=e244] [cursor=pointer]:
+        - /url: https://stackoverflow.com/questions/tagged/dask
+        - img "Stack Overflow icon" [ref=e245]
+        - generic [ref=e246]: go to stackoverflow. page
+      - link "Chat icon go to dask discourse group page" [ref=e247] [cursor=pointer]:
+        - /url: https://dask.discourse.group
+        - img "Chat icon" [ref=e248]
+        - generic [ref=e249]: go to dask discourse group page
+    - paragraph [ref=e251]: Copyright © 2026 Dask core developers. New-BSD Licensed.
