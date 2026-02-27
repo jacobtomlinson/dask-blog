@@ -1,10 +1,41 @@
 <footer class="footer">
   <div class="footer-inner">
-    <div>&copy; {{ now.Year }} Dask Contributors</div>
-    <ul class="footer-links">
-      <li><a href="{{ "atom.xml" | absURL }}">Atom Feed</a></li>
-      <li><a href="https://github.com/dask/dask" rel="noopener">GitHub</a></li>
-      <li><a href="https://www.dask.org" rel="noopener">dask.org</a></li>
-    </ul>
+    <div class="footer-top">
+      <div class="footer-col">
+        <a class="footer-brand" href="{{ "/" | relURL }}">
+          <svg width="30" height="30" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100" height="100" rx="8" fill="#FFC11E"/>
+            <text x="50" y="70" text-anchor="middle" font-family="Inter, sans-serif" font-weight="700" font-size="60" fill="#262326">D</text>
+          </svg>
+          Dask Blog
+        </a>
+        <p class="footer-description">Working notes from the Dask community about scaling Python.</p>
+        <div class="footer-social">
+          <a href="https://github.com/dask" rel="noopener">GitHub</a>
+          <a href="https://twitter.com/daborker" rel="noopener">Twitter</a>
+          <a href="https://www.youtube.com/@daborker" rel="noopener">YouTube</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Links</h4>
+        <ul>
+          <li><a href="{{ "/" | relURL }}">Blog</a></li>
+          <li><a href="{{ "/tag/" | relURL }}">Tags</a></li>
+          <li><a href="{{ "atom.xml" | absURL }}">Atom Feed</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Community</h4>
+        <ul>
+          <li><a href="https://www.dask.org" rel="noopener">dask.org</a></li>
+          <li><a href="https://github.com/dask/dask" rel="noopener">GitHub</a></li>
+          <li><a href="https://discourse.dask.org" rel="noopener">Discourse</a></li>
+          <li><a href="https://stackoverflow.com/questions/tagged/dask" rel="noopener">Stack Overflow</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copyright">&copy; {{ now.Year }} Dask core developers. New-BSD Licensed</span>
+    </div>
   </div>
 </footer>

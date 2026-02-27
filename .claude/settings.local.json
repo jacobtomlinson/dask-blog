@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "WebFetch(domain:raw.githubusercontent.com)",
-      "WebFetch(domain:www.dask.org)"
+      "WebFetch(domain:www.dask.org)",
+      "Skill(playwright-cli)"
     ]
   }
 }

@@ -12,7 +12,11 @@
       <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
       {{- with .Params.tags }}
       &middot;
-      {{- range $i, $tag := . }}{{ if $i }}, {{ end }}<a href="{{ "/tag/" | relURL }}{{ $tag | urlize }}/">{{ $tag }}</a>{{ end }}
+      <span class="post-tags">
+        {{- range . }}
+        <a class="tag-pill" href="{{ "/tag/" | relURL }}{{ . | urlize }}/">{{ . }}</a>
+        {{- end }}
+      </span>
       {{- end }}
     </div>
   </header>
