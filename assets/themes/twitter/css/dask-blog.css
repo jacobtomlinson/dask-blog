@@ -38,23 +38,18 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
-   CSS Custom Properties
+   CSS Custom Properties — Brand constants
    ========================================================================== */
 
 :root {
-  --dark-primary: #080815;
   --yellow: #ffc11e;
   --salmon: #fc6e6b;
   --red: #ef1561;
-  --white: #ffffff;
-  --light-grey: #f6f6f6;
-  --medium-grey: #ebeaee;
   --green: #61ba92;
   --blue: #1f5aff;
   --navy: #183d72;
-  --dark-slate-grey: #33363d;
   --charcoal: #262326;
-  --grey: #adadad;
+  --dark-slate-grey: #33363d;
   --thunder: #353235;
 
   --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -63,15 +58,72 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 /* ==========================================================================
+   Light theme (default)
+   ========================================================================== */
+
+html[data-theme="light"] {
+  color-scheme: light;
+
+  --color-background: #ffffff;
+  --color-text: #080815;
+  --color-text-secondary: #666666;
+  --color-text-muted: #888888;
+  --color-border: #ebeaee;
+  --color-surface: #f6f6f6;
+  --color-inline-code-bg: #f6f6f6;
+  --color-inline-code-text: #080815;
+  --color-table-header-bg: #f6f6f6;
+  --color-table-hover-bg: #f6f6f6;
+  --color-tag-bg: #f6f6f6;
+  --color-tag-text: #080815;
+  --color-blockquote-bg: #f6f6f6;
+  --color-blockquote-text: #555555;
+  --color-link: #080815;
+  --color-code-bg: #1e1e2e;
+  --color-code-text: #cdd6f4;
+}
+
+/* ==========================================================================
+   Dark theme
+   ========================================================================== */
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+
+  --color-background: #14181e;
+  --color-text: #d4d4d8;
+  --color-text-secondary: #a1a1aa;
+  --color-text-muted: #71717a;
+  --color-border: #2e2e38;
+  --color-surface: #1e1e28;
+  --color-inline-code-bg: #27272f;
+  --color-inline-code-text: #d4d4d8;
+  --color-table-header-bg: #1e1e28;
+  --color-table-hover-bg: #22222c;
+  --color-tag-bg: #27272f;
+  --color-tag-text: #d4d4d8;
+  --color-blockquote-bg: #1e1e28;
+  --color-blockquote-text: #a1a1aa;
+  --color-link: #d4d4d8;
+  --color-code-bg: #0d0d14;
+  --color-code-text: #cdd6f4;
+}
+
+/* ==========================================================================
    Base Typography
    ========================================================================== */
 
 body {
-  color: var(--dark-primary);
+  color: var(--color-text);
   font-family: var(--font-family);
   font-size: 1rem;
   line-height: 1.6;
-  background-color: var(--white);
+  background-color: var(--color-background);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--color-text);
 }
 
 h1 {
@@ -137,7 +189,7 @@ p {
 }
 
 a {
-  color: var(--dark-primary);
+  color: var(--color-link);
   text-decoration: none;
   border-bottom: 2px solid var(--yellow);
   font-weight: 600;
@@ -175,8 +227,8 @@ blockquote {
   font-family: var(--font-family);
   font-size: 1.1rem;
   line-height: 1.6;
-  color: #555;
-  background-color: var(--light-grey);
+  color: var(--color-blockquote-text);
+  background-color: var(--color-blockquote-bg);
 }
 
 figure {
@@ -187,7 +239,7 @@ figcaption {
   text-align: center;
   margin-top: 0.5rem;
   font-size: 0.875rem;
-  color: #666;
+  color: var(--color-text-secondary);
 }
 
 img {
@@ -202,7 +254,7 @@ label {
 
 hr {
   border: none;
-  border-top: 1px solid var(--medium-grey);
+  border-top: 1px solid var(--color-border);
   margin: 2rem 0;
 }
 
@@ -212,7 +264,7 @@ hr {
 
 .dask-navbar {
   background-color: var(--charcoal);
-  color: var(--white);
+  color: #ffffff;
   position: relative;
   z-index: 1000;
   width: 100%;
@@ -254,7 +306,7 @@ hr {
 }
 
 .dask-navbar .nav-link {
-  color: var(--white);
+  color: #ffffff;
   border-bottom: 2px solid transparent;
   padding: 0.25rem 0;
   margin: 0 1rem;
@@ -265,13 +317,13 @@ hr {
 }
 
 .dask-navbar .nav-link:hover {
-  color: var(--white);
+  color: #ffffff;
   border-bottom-color: var(--yellow);
 }
 
 .dask-navbar .nav-link.is-active {
   border-bottom-color: var(--yellow);
-  color: var(--white);
+  color: #ffffff;
 }
 
 .dask-navbar .nav-dropdown {
@@ -284,7 +336,7 @@ hr {
   align-items: center;
   gap: 4px;
   cursor: pointer;
-  color: var(--white);
+  color: #ffffff;
   border-bottom: 2px solid transparent;
   padding: 0.25rem 0;
   margin: 0 1rem;
@@ -329,7 +381,7 @@ hr {
 
 .dask-navbar .nav-dropdown-menu a {
   display: block;
-  color: var(--white);
+  color: #ffffff;
   border-bottom: none;
   padding: 0.375rem 0;
   font-size: 1rem;
@@ -345,7 +397,7 @@ hr {
 
 .dask-navbar .nav-button {
   background-color: var(--yellow);
-  color: var(--dark-primary);
+  color: #080815;
   cursor: pointer;
   border: 0;
   border-radius: 4px;
@@ -363,7 +415,7 @@ hr {
 
 .dask-navbar .nav-button:hover {
   background-color: #f6ba19;
-  color: var(--dark-primary);
+  color: #080815;
 }
 
 .dask-navbar .menu-button {
@@ -373,9 +425,50 @@ hr {
   margin-left: auto;
   background: none;
   border: none;
-  color: var(--white);
+  color: #ffffff;
   font-size: 1.5rem;
 }
+
+/* ==========================================================================
+   Theme Toggle Button
+   ========================================================================== */
+
+.theme-switch-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #ffffff;
+  padding: 0.25rem;
+  margin: 0 0.75rem;
+  width: 32px;
+  height: 32px;
+  border-radius: 4px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.theme-switch-button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-switch-button .theme-switch {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+.theme-switch-button .theme-switch svg {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+/* Show icon matching current mode */
+html[data-mode="auto"]  .theme-switch-button .theme-switch[data-mode="auto"]  { display: inline-flex; }
+html[data-mode="light"] .theme-switch-button .theme-switch[data-mode="light"] { display: inline-flex; }
+html[data-mode="dark"]  .theme-switch-button .theme-switch[data-mode="dark"]  { display: inline-flex; }
 
 /* ==========================================================================
    Footer
@@ -383,7 +476,7 @@ hr {
 
 .dask-footer {
   background-color: var(--dark-slate-grey);
-  color: var(--white);
+  color: #ffffff;
   font-family: var(--font-family);
 }
 
@@ -414,7 +507,7 @@ hr {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 1rem;
-  color: var(--white);
+  color: #ffffff;
 }
 
 .dask-footer .footer-line {
@@ -425,7 +518,7 @@ hr {
 
 .dask-footer .footer-link {
   display: block;
-  color: var(--white);
+  color: #ffffff;
   border-bottom: none;
   font-size: 0.9375rem;
   font-weight: 400;
@@ -466,14 +559,14 @@ hr {
 
 .dask-footer .footer-copyright {
   font-size: 0.8125rem;
-  color: var(--grey);
+  color: #adadad;
   margin-top: 2rem;
   padding-top: 1rem;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .dask-footer .footer-copyright a {
-  color: var(--grey);
+  color: #adadad;
   border-bottom: none;
   font-weight: 400;
   font-size: 0.8125rem;
@@ -518,7 +611,7 @@ hr {
 
 .blog-header .blog-tagline {
   font-size: 1.125rem;
-  color: #666;
+  color: var(--color-text-secondary);
   font-weight: 400;
 }
 
@@ -541,11 +634,11 @@ hr {
 
 .posts-list li {
   padding: 1.25rem 0;
-  border-bottom: 1px solid var(--medium-grey);
+  border-bottom: 1px solid var(--color-border);
 }
 
 .posts-list li:first-child {
-  border-top: 1px solid var(--medium-grey);
+  border-top: 1px solid var(--color-border);
 }
 
 .post-item-title {
@@ -563,7 +656,7 @@ hr {
 .post-item-date {
   display: block;
   font-size: 0.875rem;
-  color: #666;
+  color: var(--color-text-secondary);
   margin-top: 0.375rem;
   font-style: normal;
   font-weight: 400;
@@ -575,7 +668,7 @@ hr {
 
 .post-header {
   padding: 3rem 0 1.5rem;
-  border-bottom: 1px solid var(--medium-grey);
+  border-bottom: 1px solid var(--color-border);
   margin-bottom: 2rem;
 }
 
@@ -588,14 +681,14 @@ hr {
 
 .post-header .post-tagline {
   font-size: 1.25rem;
-  color: #666;
+  color: var(--color-text-secondary);
   font-weight: 400;
   margin-bottom: 0.5rem;
 }
 
 .post-header .post-meta {
   font-size: 0.9375rem;
-  color: #888;
+  color: var(--color-text-muted);
   font-style: italic;
 }
 
@@ -610,7 +703,7 @@ hr {
   margin-top: 2.5rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
-  border-bottom: 2px solid var(--medium-grey);
+  border-bottom: 2px solid var(--color-border);
 }
 
 .post-body h3 {
@@ -654,8 +747,8 @@ hr {
 /* Code blocks */
 .post-body pre,
 pre {
-  background-color: #1e1e2e;
-  color: #cdd6f4;
+  background-color: var(--color-code-bg);
+  color: var(--color-code-text);
   border-radius: 6px;
   padding: 1.25rem 1.5rem;
   overflow-x: auto;
@@ -674,11 +767,11 @@ code {
 .post-body li code,
 p code,
 li code {
-  background-color: var(--light-grey);
+  background-color: var(--color-inline-code-bg);
   padding: 0.15em 0.4em;
   border-radius: 3px;
   font-size: 0.85em;
-  color: var(--dark-primary);
+  color: var(--color-inline-code-text);
 }
 
 .post-body pre code,
@@ -709,13 +802,13 @@ table {
 
 .post-body th,
 th {
-  background-color: var(--light-grey);
+  background-color: var(--color-table-header-bg);
   padding: 0.75rem 1rem;
   text-align: left;
   font-weight: 600;
-  border-bottom: 2px solid var(--medium-grey);
+  border-bottom: 2px solid var(--color-border);
   font-family: var(--font-family);
-  color: var(--dark-primary);
+  color: var(--color-text);
   text-shadow: none;
   font-size: 0.9375rem;
 }
@@ -723,22 +816,22 @@ th {
 .post-body td,
 td {
   padding: 0.625rem 1rem;
-  border-bottom: 1px solid var(--medium-grey);
+  border-bottom: 1px solid var(--color-border);
   background: none;
   font-family: var(--font-family);
-  color: var(--dark-primary);
+  color: var(--color-text);
   text-shadow: none;
   font-size: 0.9375rem;
 }
 
 .post-body tr:hover td,
 tr:hover td {
-  background-color: var(--light-grey);
+  background-color: var(--color-table-hover-bg);
 }
 
 table a:link,
 table a:visited {
-  color: var(--dark-primary);
+  color: var(--color-link);
   font-weight: 600;
 }
 
@@ -761,7 +854,7 @@ table a:hover {
 
 .page-header-section .page-tagline {
   font-size: 1.125rem;
-  color: #666;
+  color: var(--color-text-secondary);
   margin-top: 0.25rem;
 }
 
@@ -788,8 +881,8 @@ table a:hover {
 
 .tag-box a {
   display: inline-block;
-  background-color: var(--light-grey);
-  color: var(--dark-primary);
+  background-color: var(--color-tag-bg);
+  color: var(--color-tag-text);
   padding: 0.375rem 0.875rem;
   border-radius: 4px;
   font-size: 0.875rem;
@@ -800,12 +893,12 @@ table a:hover {
 
 .tag-box a:hover {
   background-color: var(--yellow);
-  color: var(--dark-primary);
+  color: #080815;
 }
 
 .tag-box a span.count {
   font-weight: 400;
-  color: #888;
+  color: var(--color-text-muted);
   margin-left: 0.25rem;
 }
 
@@ -814,7 +907,7 @@ table a:hover {
   margin-top: 2rem;
   margin-bottom: 0.75rem;
   padding-bottom: 0.25rem;
-  border-bottom: 2px solid var(--medium-grey);
+  border-bottom: 2px solid var(--color-border);
 }
 
 .tag-section ul {
@@ -824,7 +917,7 @@ table a:hover {
 
 .tag-section li {
   padding: 0.5rem 0;
-  border-bottom: 1px solid var(--light-grey);
+  border-bottom: 1px solid var(--color-surface);
 }
 
 .tag-section li a {
@@ -927,6 +1020,10 @@ figure.align-center {
 
   .dask-navbar .menu-button {
     display: block;
+  }
+
+  .theme-switch-button {
+    margin: 0.375rem 0;
   }
 
   .blog-container {
