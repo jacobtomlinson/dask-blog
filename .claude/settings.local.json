@@ -6,7 +6,8 @@
       "WebFetch(domain:pydata-sphinx-theme.readthedocs.io)",
       "WebSearch",
       "WebFetch(domain:mackenga.ro)",
-      "WebFetch(domain:www.sphinx-doc.org)"
+      "WebFetch(domain:www.sphinx-doc.org)",
+      "WebFetch(domain:www.dask.org)"
     ]
   }
 }
