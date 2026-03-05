@@ -14,4 +14,4 @@ build:
       - asdf global hugo latest
     build:
       html:
-        - hugo --minify --destination $READTHEDOCS_OUTPUT/html/
+        - hugo --minify --baseURL $READTHEDOCS_CANONICAL_URL --destination $READTHEDOCS_OUTPUT/html/
