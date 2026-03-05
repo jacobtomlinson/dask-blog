@@ -6,8 +6,6 @@ tags: Programming, Python, scipy, dask
 description: Preparing the ecosystem for GPU, distributed, and sparse arrays
 ---
 
-
-
 ## Executive Summary
 
 In recent years Python's array computing ecosystem has grown organically to support

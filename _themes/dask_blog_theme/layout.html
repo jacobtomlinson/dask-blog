@@ -1,10 +1,8 @@
-{# Skip dask_sphinx_theme's layout to avoid its doc-focused navbar.
-   We inherit the theme's CSS/assets via theme.conf, but extend
-   sphinx_book_theme's layout directly for template blocks. #}
-{%- set favicon_url = favicon_url or ('_static/' + ('images/favicon.svg')) %}
-{%- extends "sphinx_book_theme/layout.html" %}
-
-{%- block content %}
+{# Skip dask_sphinx_theme's layout to avoid its doc-focused navbar. We inherit
+the theme's CSS/assets via theme.conf, but extend sphinx_book_theme's layout
+directly for template blocks. #} {%- set favicon_url = favicon_url or
+('_static/' + ('images/favicon.svg')) %} {%- extends
+"sphinx_book_theme/layout.html" %} {%- block content %}
 <!-- Google Tag Manager (noscript) -->
 <noscript
   ><iframe
@@ -35,7 +33,9 @@
     <li class="dask-nav-dropdown">
       <a href="#" class="dask-nav-dropdown-toggle">Community</a>
       <ul class="dask-nav-dropdown-menu">
-        <li><a href="https://docs.dask.org/en/stable/community.html">Get Help</a></li>
+        <li>
+          <a href="https://docs.dask.org/en/stable/community.html">Get Help</a>
+        </li>
         <li><a href="https://www.dask.org/powered-by">Powered By</a></li>
       </ul>
     </li>
@@ -54,11 +54,8 @@
   </button>
 </nav>
 
-{{ super() }}
-{%- endblock %}
-
-{# Override footer with dask.org-style multi-column layout #}
-{%- block footer %}
+{{ super() }} {%- endblock %} {# Override footer with dask.org-style
+multi-column layout #} {%- block footer %}
 <!-- Google Tag Manager -->
 <script>
   (function (w, d, s, l, i) {
@@ -89,7 +86,9 @@
       <h4>Get Started</h4>
       <ul>
         <li><a href="https://docs.dask.org/en/stable/">Documentation</a></li>
-        <li><a href="https://docs.dask.org/en/stable/install.html">Install</a></li>
+        <li>
+          <a href="https://docs.dask.org/en/stable/install.html">Install</a>
+        </li>
         <li><a href="https://examples.dask.org/">Examples</a></li>
       </ul>
     </div>
@@ -97,9 +96,13 @@
     <div class="dask-footer-col">
       <h4>Community</h4>
       <ul>
-        <li><a href="https://docs.dask.org/en/stable/community.html">Get Help</a></li>
+        <li>
+          <a href="https://docs.dask.org/en/stable/community.html">Get Help</a>
+        </li>
         <li><a href="https://www.dask.org/powered-by">Powered By</a></li>
-        <li><a href="https://docs.dask.org/en/latest/ecosystem.html">Ecosystem</a></li>
+        <li>
+          <a href="https://docs.dask.org/en/latest/ecosystem.html">Ecosystem</a>
+        </li>
       </ul>
     </div>
 
@@ -130,7 +133,10 @@
       <a href="https://www.youtube.com/c/daborashed" aria-label="YouTube">
         <i class="fa-brands fa-youtube"></i>
       </a>
-      <a href="https://stackoverflow.com/questions/tagged/dask" aria-label="Stack Overflow">
+      <a
+        href="https://stackoverflow.com/questions/tagged/dask"
+        aria-label="Stack Overflow"
+      >
         <i class="fa-brands fa-stack-overflow"></i>
       </a>
       <a href="https://dask.discourse.group/" aria-label="Discourse">

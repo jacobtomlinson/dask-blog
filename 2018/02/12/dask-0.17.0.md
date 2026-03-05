@@ -5,8 +5,6 @@ title: Dask Release 0.17.0
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc.](http://anaconda.com)
 and the Data Driven Discovery Initiative from the [Moore
 Foundation](https://www.moore.org/)._

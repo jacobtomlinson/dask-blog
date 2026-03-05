@@ -7,8 +7,6 @@ tags: release
 description: We broke a bunch of APIs
 ---
 
-
-
 _Please take the [Dask User Survey for 2019](https://t.co/OGrIjTLC2G)._
 _Your reponse helps to prioritize future work._
 

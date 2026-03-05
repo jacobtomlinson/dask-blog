@@ -7,8 +7,6 @@ tags: GPU, array, cupy
 description: throwing Dask and CuPy together
 ---
 
-
-
 The following code creates and manipulates 2 TB of randomly generated data.
 
 ```python

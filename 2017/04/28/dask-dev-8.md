@@ -5,8 +5,6 @@ title: Dask Development Log
 tags: Programming, Python, scipy
 ---
 
-
-
 _This work is supported by [Continuum Analytics](http://continuum.io) and the
 Data Driven Discovery Initiative from the [Moore
 Foundation](https://www.moore.org/)_

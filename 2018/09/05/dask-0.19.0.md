@@ -5,8 +5,6 @@ title: Dask Release 0.19.0
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc.](http://anaconda.com)_
 
 I'm pleased to announce the release of Dask version 0.19.0. This is a major

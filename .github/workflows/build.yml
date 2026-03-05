@@ -6,7 +6,7 @@ on:
   pull_request:
     branches: [gh-pages]
   schedule:
-    - cron: "0 3 * * *"      # Nightly rebuild
+    - cron: "0 3 * * *" # Nightly rebuild
   workflow_dispatch:
 
 permissions:

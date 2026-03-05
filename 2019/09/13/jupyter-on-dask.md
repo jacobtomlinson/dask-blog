@@ -6,8 +6,6 @@ author: Matthew Rocklin
 tags: HPC
 ---
 
-
-
 If you want, you can have Dask set up a Jupyter notebook server for you,
 co-located with the Dask scheduler. There are many ways to do this, but this
 blog post lists two.

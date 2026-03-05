@@ -6,8 +6,6 @@ author: Matthew Rocklin
 tags: dataframe, GPU, RAPIDS
 ---
 
-
-
 ## Summary
 
 We've sufficiently aligned Dask DataFrame and cuDF to get groupby aggregations

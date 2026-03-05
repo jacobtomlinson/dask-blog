@@ -6,8 +6,6 @@ author: Matthew Rocklin
 tags: dask, numba
 ---
 
-
-
 In this post we explore four array computing technologies, and how they
 work together to achieve powerful results.
 

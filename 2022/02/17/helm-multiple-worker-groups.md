@@ -6,7 +6,6 @@ author: Matthew Murray (NVIDIA)
 tags: Kubernetes, Helm
 ---
 
-
 ## Introduction
 
 Today, we’ll learn how to deploy [Dask](https://dask.org/) on a [Kubernetes](https://kubernetes.io/) cluster with the Dask Helm Chart and then run and scale different worker types with annotations.

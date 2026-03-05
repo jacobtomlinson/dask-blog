@@ -29,10 +29,12 @@ The Dask blog (`blog.dask.org`) is a 158-post Jekyll blog using Jekyll-Bootstrap
 ## Phase 1: Sphinx Project Setup
 
 ### 1.1 Branch strategy
+
 - Continue on `sphinx-migration` branch (already created from `gh-pages`)
 - `gh-pages` continues serving the live Jekyll site until cutover
 
 ### 1.2 Python dependencies (`requirements.txt`)
+
 ```
 sphinx>=8.0
 ablog>=0.11
@@ -41,6 +43,7 @@ myst-parser>=4.0
 ```
 
 ### 1.3 Create `conf.py`
+
 ```python
 # -- Project information
 project = "Dask Blog"
@@ -163,6 +166,7 @@ html_context = {
 ```
 
 ### 1.4 Target directory structure
+
 ```
 dask-blog/
   conf.py
@@ -209,6 +213,7 @@ dask-blog/
 ### 2.1 Design direction
 
 Use **pydata-sphinx-theme** — the same theme family used by dask.org, pandas, numpy, xarray, and the broader PyData ecosystem. This provides out of the box:
+
 - Built-in light/dark theme toggle (no custom JS needed)
 - Responsive layout with Bootstrap 5
 - ABlog-aware sidebar templates (post cards, tag clouds, archives)
@@ -223,38 +228,39 @@ Override pydata-sphinx-theme CSS variables to match dask.org branding:
 ```css
 /* Dask brand colors */
 html[data-theme="light"] {
-    --pst-color-primary: #FFC11E;             /* Dask gold */
-    --pst-color-primary-text: #080815;
-    --pst-color-link: #0088cc;
-    --pst-color-link-hover: #005580;
-    --pst-font-family-base: "Inter", sans-serif;
-    --pst-font-family-heading: "Inter", sans-serif;
+  --pst-color-primary: #ffc11e; /* Dask gold */
+  --pst-color-primary-text: #080815;
+  --pst-color-link: #0088cc;
+  --pst-color-link-hover: #005580;
+  --pst-font-family-base: "Inter", sans-serif;
+  --pst-font-family-heading: "Inter", sans-serif;
 }
 
 html[data-theme="dark"] {
-    --pst-color-primary: #FFC11E;             /* Dask gold */
-    --pst-color-primary-text: #080815;
-    --pst-color-link: #FFC11E;
-    --pst-color-link-hover: #ffd561;
-    --pst-font-family-base: "Inter", sans-serif;
-    --pst-font-family-heading: "Inter", sans-serif;
+  --pst-color-primary: #ffc11e; /* Dask gold */
+  --pst-color-primary-text: #080815;
+  --pst-color-link: #ffc11e;
+  --pst-color-link-hover: #ffd561;
+  --pst-font-family-base: "Inter", sans-serif;
+  --pst-font-family-heading: "Inter", sans-serif;
 }
 
 /* Blog post listing style */
 .postlist .postlist-date {
-    color: var(--pst-color-text-muted);
-    font-size: 0.9em;
+  color: var(--pst-color-text-muted);
+  font-size: 0.9em;
 }
 
 /* Wide layout variant for widepost pages */
 body.wide-post .bd-article {
-    max-width: 100%;
+  max-width: 100%;
 }
 ```
 
 ### 2.3 Light/dark theme
 
 Handled entirely by pydata-sphinx-theme — no custom implementation needed:
+
 - Theme toggle button configured via `"navbar_end": ["theme-switcher"]`
 - Follows system `prefers-color-scheme` preference by default
 - Persists user choice to `localStorage`
@@ -267,11 +273,18 @@ Override the pydata-sphinx-theme's analytics partial to inject Google Tag Manage
 ```html
 {% if gtm_id %}
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','{{ gtm_id }}');</script>
+<script>
+  (function (w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
+    var f = d.getElementsByTagName(s)[0],
+      j = d.createElement(s),
+      dl = l != "dataLayer" ? "&l=" + l : "";
+    j.async = true;
+    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
+    f.parentNode.insertBefore(j, f);
+  })(window, document, "script", "dataLayer", "{{ gtm_id }}");
+</script>
 {% endif %}
 ```
 
@@ -279,12 +292,12 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 pydata-sphinx-theme provides styled versions of ABlog sidebars:
 
-| Template | Usage |
-|----------|-------|
-| `ablog/postcard.html` | Post metadata (date, author, tags) — shown on individual posts |
-| `ablog/tagcloud.html` | Tag cloud — shown on archive pages |
-| `ablog/archives.html` | Year-based archive links — shown on archive pages |
-| `ablog/recentposts.html` | Recent posts list (optional) |
+| Template                 | Usage                                                          |
+| ------------------------ | -------------------------------------------------------------- |
+| `ablog/postcard.html`    | Post metadata (date, author, tags) — shown on individual posts |
+| `ablog/tagcloud.html`    | Tag cloud — shown on archive pages                             |
+| `ablog/archives.html`    | Year-based archive links — shown on archive pages              |
+| `ablog/recentposts.html` | Recent posts list (optional)                                   |
 
 Configured via `html_sidebars` in `conf.py` (see Phase 1.3).
 
@@ -297,10 +310,12 @@ Configured via `html_sidebars` in `conf.py` (see Phase 1.3).
 Transforms all 158 posts from Jekyll format to Sphinx/ABlog/MyST format:
 
 **File relocation:**
+
 - `_posts/2024-01-15-my-post.md` → `posts/2024/01/15/my-post.md`
 - Posts with `draft: true` (8 posts) → `drafts/original-slug.md`
 
 **Front matter changes:**
+
 - Remove: `layout: post`, `layout: widepost`, `theme: twitter`
 - Keep as-is: `title`, `author`, `tags`
 - Rename: `canonical_url` → `canonical_link` (ABlog's field name)
@@ -310,11 +325,13 @@ Transforms all 158 posts from Jekyll format to Sphinx/ABlog/MyST format:
 - Convert: `layout: widepost` → `layout_style: wide` (custom front matter, handled by CSS/template)
 
 **Body changes:**
+
 - Strip `{% include JB/setup %}` from all 150 posts
 - Convert `{% gist USER/ID %}` → raw HTML `<script src="https://gist.github.com/USER/ID.js"></script>` (1 post)
 - Move inline `<meta>` tag to front matter `description` (1 post)
 
 **Example: before (Jekyll)**
+
 ```markdown
 ---
 layout: post
@@ -331,6 +348,7 @@ Post content here with $math$ and <iframe>s...
 ```
 
 **Example: after (Sphinx/ABlog/MyST)**
+
 ```markdown
 ---
 blogpost: true
@@ -363,13 +381,14 @@ MyST-Parser follows the CommonMark spec and passes through raw HTML blocks by de
 ```
 
 Download Dask logos and favicon to `_static/`:
+
 - `_static/dask-logo.svg` (light mode logo)
 - `_static/dask-logo-white.svg` (dark mode logo)
 - `_static/favicon.ico`
 
 ### 3.4 Create homepage (`index.md`)
 
-```markdown
+````markdown
 ---
 myst:
   html_meta:
@@ -384,6 +403,7 @@ myst:
 :excerpts:
 :expand: Read more...
 ```
+````
 
 ```{toctree}
 :hidden:
@@ -391,7 +411,8 @@ myst:
 
 posts/*/*/*/*
 ```
-```
+
+````
 
 The hidden glob toctree ensures all posts are included in Sphinx's document tree without displaying a table of contents on the homepage.
 
@@ -441,7 +462,7 @@ Create redirect HTML files in `extras/` for the old feed URLs. The redirect file
 <!DOCTYPE html>
 <html><head><meta http-equiv="refresh" content="0;url=/blog/tag/Python/atom.xml"></head>
 <body>Redirecting...</body></html>
-```
+````
 
 **Note:** Tag name casing in ABlog feed URLs needs verification. ABlog may lowercase tag slugs.
 
@@ -452,6 +473,7 @@ Create redirect HTML files in `extras/` for the old feed URLs. The redirect file
 ### 3.9 404 page
 
 Create `404.md` at the source root:
+
 ```markdown
 ---
 orphan: true
@@ -470,11 +492,13 @@ Sorry, this page does not exist. [Return to the homepage](/).
 Playwright is used during development to verify migration correctness, **not** as a permanent CI suite.
 
 ### 4.1 Setup
+
 - `package.json` at root with `@playwright/test` devDependency
 - `playwright/playwright.config.ts` with `webServer` pointing to `python -m http.server` serving `_website/`
 - Or use `ablog serve` if it provides a suitable dev server
 
 ### 4.2 Test coverage (development verification)
+
 - **Homepage**: loads, lists 150+ posts, has correct title
 - **Every post URL**: returns 200 (iterate all post links from homepage)
 - **Sample posts**: verify title, author, content renders
@@ -501,6 +525,7 @@ Playwright is used during development to verify migration correctness, **not** a
 ## Phase 5: CI/CD & Cleanup
 
 ### 5.1 GitHub Actions: Sphinx build + deploy (`.github/workflows/build.yml`)
+
 ```yaml
 name: Build & Deploy
 
@@ -510,7 +535,7 @@ on:
   pull_request:
     branches: [gh-pages]
   schedule:
-    - cron: "0 3 * * *"      # Nightly rebuild (replaces refresh.yml)
+    - cron: "0 3 * * *" # Nightly rebuild (replaces refresh.yml)
   workflow_dispatch:
 
 permissions:
@@ -559,18 +584,22 @@ jobs:
 ```
 
 ### 5.2 Update pre-commit workflow
+
 - Keep prettier + markdownlint, update action versions
 - Update `.prettierignore` and `.gitignore` for Sphinx paths (`_build/`, `_website/`, `.doctrees/`, `node_modules/`)
 
 ### 5.3 Delete Jekyll artifacts
+
 Remove: `_config.yml`, `_includes/`, `_layouts/`, `_plugins/`, `_posts/`, `assets/`, `css/`, `Gemfile`, `.ruby-version`, `Rakefile`, `atom.xml`, `feed.*.xml`, `sitemap.txt`, `index.md` (old Jekyll homepage — replaced by new `index.md`), `tags.html`, `documentation.html`, `404.html`, `changelog.md`, `scripts/`
 
 Keep: `CNAME`, `.github/`, `README.md` (updated), `images/`, `storage/`
 
 ### 5.4 Delete refresh workflow
+
 `.github/workflows/refresh.yml` is replaced by the `schedule` trigger in `build.yml`.
 
 ### 5.5 Update `.gitignore`
+
 ```gitignore
 _build/
 _website/
@@ -601,18 +630,18 @@ __pycache__/
 
 ## Key Risks & Mitigations
 
-| Risk | Mitigation |
-|------|-----------|
-| Permalink mismatch (slug differences) | Playwright tests check all 150+ post URLs return 200 |
-| `/posts/` prefix in URLs (Option A) | Use Option B (year dirs at root) for exact URL match; or create redirects |
-| Raw HTML stripped by MyST-Parser | CommonMark spec passes through HTML blocks; test 50+ posts; wrap in `{raw}` directive if needed |
-| MathJax `$` conflicts with MyST | `dollarmath` extension + `myst_update_mathjax = False` configured; test 12 math posts |
-| Tag URL case sensitivity | ABlog may lowercase tag slugs; verify feed URLs match tag casing |
-| Feed URL change (`atom.xml` → `/blog/atom.xml`) | Redirect files in `extras/`; or use `blog_path = ""` for root-level feeds |
-| `blog_path = ""` conflicts with homepage | Test thoroughly; fallback to `blog_path = "blog"` with redirects |
-| Sphinx build speed (158 posts) | Acceptable for CI; use `sphinx -j auto` for parallel builds |
-| ABlog sidebar conflicts with theme | pydata-sphinx-theme has native ABlog support since v0.16 |
-| GitHub Pages deployment cutover | Build workflow + settings change coordinated; CNAME unchanged |
+| Risk                                            | Mitigation                                                                                      |
+| ----------------------------------------------- | ----------------------------------------------------------------------------------------------- |
+| Permalink mismatch (slug differences)           | Playwright tests check all 150+ post URLs return 200                                            |
+| `/posts/` prefix in URLs (Option A)             | Use Option B (year dirs at root) for exact URL match; or create redirects                       |
+| Raw HTML stripped by MyST-Parser                | CommonMark spec passes through HTML blocks; test 50+ posts; wrap in `{raw}` directive if needed |
+| MathJax `$` conflicts with MyST                 | `dollarmath` extension + `myst_update_mathjax = False` configured; test 12 math posts           |
+| Tag URL case sensitivity                        | ABlog may lowercase tag slugs; verify feed URLs match tag casing                                |
+| Feed URL change (`atom.xml` → `/blog/atom.xml`) | Redirect files in `extras/`; or use `blog_path = ""` for root-level feeds                       |
+| `blog_path = ""` conflicts with homepage        | Test thoroughly; fallback to `blog_path = "blog"` with redirects                                |
+| Sphinx build speed (158 posts)                  | Acceptable for CI; use `sphinx -j auto` for parallel builds                                     |
+| ABlog sidebar conflicts with theme              | pydata-sphinx-theme has native ABlog support since v0.16                                        |
+| GitHub Pages deployment cutover                 | Build workflow + settings change coordinated; CNAME unchanged                                   |
 
 ## Open Questions
 
@@ -624,6 +653,7 @@ __pycache__/
 ## Verification
 
 After each phase, verify locally with:
+
 ```bash
 pip install -r requirements.txt
 ablog build
@@ -632,6 +662,7 @@ ablog serve
 ```
 
 Full verification before merge:
+
 ```bash
 cd playwright && npx playwright test
 ```

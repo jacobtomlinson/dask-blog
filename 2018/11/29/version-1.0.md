@@ -6,8 +6,6 @@ author: the Dask Team
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 We are pleased to announce the release of Dask version 1.0.0!
 
 Usually in release blogposts we outline important features and changes since

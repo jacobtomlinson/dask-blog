@@ -6,8 +6,6 @@ author: Matthew Rocklin
 tags: GPU, Pandas
 ---
 
-
-
 ## Executive Summary
 
 We're building a distributed GPU Pandas dataframe out of

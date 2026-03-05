@@ -5,8 +5,6 @@ title: Dask Distributed Release 1.13.0
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 I'm pleased to announce a release of
 [Dask](http://dask.readthedocs.io/en/latest/)'s distributed scheduler,
 [dask.distributed](http://distributed.readthedocs.io/en/latest/), version

@@ -6,8 +6,6 @@ author: Martin Durant
 tags: IO
 ---
 
-
-
 ## TL;DR
 
 `fsspec`, the new base for file system operations in Dask, Intake, s3fs, gcsfs and others,

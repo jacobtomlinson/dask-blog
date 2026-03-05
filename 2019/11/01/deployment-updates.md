@@ -4,8 +4,6 @@ date: Nov 1, 2019
 title: Dask Deployment Updates
 ---
 
-
-
 ## Summary
 
 Over the last six months many Dask developers have worked on making Dask easier

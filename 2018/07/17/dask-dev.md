@@ -5,8 +5,6 @@ title: Dask Development Log, Scipy 2018
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc](http://anaconda.com)_
 
 To increase transparency I'm trying to blog more often about the current work

@@ -6,8 +6,6 @@ author: Pavithra Eswaramoorthy
 tags: dataframe
 ---
 
-
-
 If you have worked with Dask DataFrames or Dask Arrays, you have probably come across the `meta` keyword argument. Perhaps, while using methods like `apply()`:
 
 ```python

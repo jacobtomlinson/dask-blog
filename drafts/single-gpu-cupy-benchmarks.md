@@ -6,8 +6,6 @@ author: Peter Andreas Entschev
 tags: GPU, RAPIDS
 ---
 
-
-
 ## Summary
 
 Array operations with GPUs can provide considerable speedups over CPU computing,

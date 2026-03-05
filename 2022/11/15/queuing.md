@@ -6,7 +6,6 @@ author: Gabe Joseph (Coiled)
 canonical_link: https://www.coiled.io/blog/reducing-dask-memory-usage
 ---
 
-
 _Original version of this post appears on https://www.coiled.io/blog/reducing-dask-memory-usage_
 
 <img src="/images/2022-queuing/hero.png" style="max-width: 100%;" width="100%" />

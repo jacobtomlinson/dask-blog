@@ -5,8 +5,6 @@ title: Google Summer of Code 2021 - Dask Project
 author: Freyam Mehta and Genevieve Buckley
 ---
 
-
-
 ## Overview
 
 Here's an update on new features related to visualizing Dask graphs and HTML representations. You can try these new features today with version `2021.08.1` or above. This work was done by Freyam Mehta during the Google Summer of Code 2021. Dask took part in the program under the NumFOCUS umbrella organization.

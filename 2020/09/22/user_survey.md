@@ -6,8 +6,6 @@ author: Tom Augspurger
 tags: User Survey
 ---
 
-
-
 <style type="text/css">
 table td {
     background: none;

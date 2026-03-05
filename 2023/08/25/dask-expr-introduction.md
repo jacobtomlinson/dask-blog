@@ -7,7 +7,6 @@ tags: dask, query optimizer, performance
 canonical_link: https://blog.coiled.io/blog/dask-expr-introduction.html
 ---
 
-
 _This work was engineered and supported by [Coiled](https://coiled.io/?utm_source=dask-blog&utm_medium=dask-expr) and [NVIDIA](https://www.nvidia.com/). Thanks to [Patrick Hoefler](https://github.com/phofl) and [Rick Zamora](https://github.com/rjzamora), in particular. Original version of this post appears on [blog.coiled.io](https://blog.coiled.io/blog/dask-expr-introduction.html?utm_source=dask-blog&utm_medium=dask-expr)_
 
 <figure class="align-center">

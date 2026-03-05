@@ -13,6 +13,7 @@ This project uses Sphinx with ABlog and a custom `dask_blog_theme` (which inheri
 RTD recommends [`build.jobs` over `build.commands`](https://about.readthedocs.com/blog/2025/01/override-build-process-with-build-jobs/) (announced January 2025). With `build.jobs`, we only override the environment creation and install steps, while letting RTD handle the Sphinx build and output placement automatically. This is simpler and less error-prone than `build.commands`.
 
 Key advantages of `build.jobs`:
+
 - RTD handles `sphinx-build` invocation and places output into `$READTHEDOCS_OUTPUT/html/` automatically
 - The `sphinx` config key (builder, conf.py path) is still respected
 - Less config to maintain; we don't need to manually manage output paths

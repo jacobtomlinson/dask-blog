@@ -6,7 +6,6 @@ author: Duncan McGregor (Met Office), Mike Grant (EUMETSAT), Richard Care (Met O
 tags: distributed, deployment
 ---
 
-
 _This work is a joint venture between the [Met Office](https://www.metoffice.gov.uk) and the [European Weather Cloud](https://www.europeanweather.cloud/), which is a partnership of [ECMWF](https://ecmwf.int) and [EUMETSAT](https://eumetsat.int/)._
 
 ## Summary

@@ -6,8 +6,6 @@ author: Matthew Rocklin, Rick Zamora
 tags: python, scipy
 ---
 
-
-
 _This post is about experimental and rapidly changing software.
 Code examples in this post should not be relied upon to work in the future._
 

@@ -5,8 +5,6 @@ title: Dask on HPC - Initial Work
 tags: Programming, Python, scipy, dask, pangeo
 ---
 
-
-
 _This work is supported by [Anaconda Inc.](http://anaconda.com) and the [NSF
 EarthCube](https://www.nsf.gov/funding/pgm_summ.jsp?pims_id=504780) program._
 

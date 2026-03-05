@@ -6,8 +6,6 @@ author: John Kirkham, Matthew Rocklin, Matthew McCormick
 tags: imaging
 ---
 
-
-
 ## Executive Summary
 
 This post explores using the [ITK](https://www.itk.org) suite of image processing utilities in parallel with Dask Array.

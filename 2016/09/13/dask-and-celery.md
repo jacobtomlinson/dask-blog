@@ -5,8 +5,6 @@ title: Dask and Celery
 tags: Programming, Python, scipy
 ---
 
-
-
 This post compares two Python distributed task processing systems,
 Dask.distributed and Celery.
 

@@ -5,8 +5,6 @@ title: High level performance of Pandas, Dask, Spark, and Arrow
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc](http://anaconda.com)_
 
 ## Question

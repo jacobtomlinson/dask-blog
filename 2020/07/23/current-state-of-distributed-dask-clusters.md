@@ -4,7 +4,6 @@ date: Jul 23, 2020
 title: "The current state of distributed Dask clusters"
 ---
 
-
 Dask enables you to build up a graph of the computation you want to perform and then executes it in parallel for you. This is great for making best use of your computer's hardware. It is also great when you want to expand beyond the limits of a single machine.
 
 In this post we will cover:

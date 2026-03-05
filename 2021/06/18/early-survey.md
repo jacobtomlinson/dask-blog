@@ -5,8 +5,6 @@ title: Dask Survey 2021, early anecdotes
 author: Matthew Rocklin
 ---
 
-
-
 The annual Dask user survey is under way and currently accepting responses at [dask.org/survey](https://dask.org/survey).
 
 This post provides a preview into early results, focusing on anecdotal responses.

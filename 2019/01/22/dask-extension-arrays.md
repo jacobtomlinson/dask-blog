@@ -6,8 +6,6 @@ author: Tom Augspurger
 tags: dask, dataframe
 ---
 
-
-
 _This work is supported by [Anaconda Inc](http://anaconda.com)_
 
 ## Summary

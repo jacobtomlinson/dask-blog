@@ -5,8 +5,6 @@ title: Dask Release 2.2.0
 tags: release
 ---
 
-
-
 I'm pleased to announce the release of Dask version 2.2.
 This is a significant release with bug fixes and new features.
 The last blogged release was 2.0 on 2019-06-22.

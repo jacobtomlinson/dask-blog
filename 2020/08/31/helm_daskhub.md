@@ -7,7 +7,6 @@ tags: Helm, Dask Gateway, Deployment
 description: DaskHub
 ---
 
-
 Today we're announcing the release of the
 [`daskhub`](https://github.com/dask/helm-chart/blob/master/daskhub/README.md)
 helm chart. This is a [Helm](https://helm.sh/) chart to easily install

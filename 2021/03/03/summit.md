@@ -5,8 +5,6 @@ title: Dask User Summit 2021
 author: Matthew Rocklin
 ---
 
-
-
 Dask is organizing a [user summit](https://summit.dask.org) in mid-May.
 This will be a remote event focused on bringing together developers and users of Dask and the distributed PyData stack in different domains.
 

@@ -7,8 +7,6 @@ tags: MPI
 description: an experiment
 ---
 
-
-
 ## Executive Summary
 
 We present an experiment on how to pass data from a loosely coupled parallel

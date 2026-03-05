@@ -7,8 +7,6 @@ tags: User Survey
 description: 2019 dask user survey
 ---
 
-
-
 <style type="text/css">
 table td {
     background: none;

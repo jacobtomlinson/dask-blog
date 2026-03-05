@@ -6,8 +6,6 @@ author: John Kirkham
 tags: python, scipy, scikit-image, dask-image
 ---
 
-
-
 ## Executive Summary
 
 This post explores simple workflows to load large stacks of image data with Dask array.

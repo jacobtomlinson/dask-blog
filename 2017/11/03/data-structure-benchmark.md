@@ -5,8 +5,6 @@ title: Optimizing Data Structure Access in Python
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc](http://anaconda.com) and the Data
 Driven Discovery Initiative from the [Moore Foundation](https://www.moore.org/)_
 

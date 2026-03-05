@@ -6,7 +6,6 @@ author: Bernhard Stadlbauer
 tags: Python, dask, Flyte, Kubernetes
 ---
 
-
 It is now possible to manage `dask` workloads using [Flyte](https://flyte.org/) 🎉!
 
 The major advantages are:

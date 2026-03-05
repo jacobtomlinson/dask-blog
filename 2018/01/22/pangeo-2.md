@@ -5,8 +5,6 @@ title: "Pangeo: JupyterHub, Dask, and XArray on the Cloud"
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc](http://anaconda.com), the NSF
 EarthCube program, and UC Berkeley BIDS_
 

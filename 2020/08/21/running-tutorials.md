@@ -7,8 +7,6 @@ tags: Tutorials, Community
 description: How we run community tutorials
 ---
 
-
-
 For the last couple of months we've been running community tutorials every three weeks or so. The response from the community has been great and we've had 50-100 people at each 90 minute session.
 
 ## Why should open source projects run tutorials

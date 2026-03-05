@@ -5,8 +5,6 @@ title: Stability of the Dask library
 author: Matthew Rocklin
 ---
 
-
-
 Dask is moving fast these days. Sometimes we break things as a result.
 
 Historically this hasn't been a problem, according to our survey last year

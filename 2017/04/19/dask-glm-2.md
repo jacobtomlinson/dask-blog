@@ -6,8 +6,6 @@ tags: Programming, Python, scipy
 description: Computations that evolve on partial results
 ---
 
-
-
 _This work is supported by [Continuum Analytics](http://continuum.io),
 the [XDATA Program](http://www.darpa.mil/program/XDATA),
 and the Data Driven Discovery Initiative from the [Moore

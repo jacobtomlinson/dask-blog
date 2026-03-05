@@ -7,8 +7,6 @@ tags: dask, GPU, RAPIDS
 description: hyperparameter optimization and dask
 ---
 
-
-
 ### Setup
 
 - DGX-1 Workstation

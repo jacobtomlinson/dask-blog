@@ -7,8 +7,6 @@ tags: GPU, array, CuPy
 description: Dask + CuPy + Zarr + Genomics
 ---
 
-
-
 ## Summary
 
 We perform Singular Value Decomposition (SVD) calculations on large datasets.

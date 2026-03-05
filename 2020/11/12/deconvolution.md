@@ -6,8 +6,6 @@ author: John Kirkham (NVIDIA) and Ben Zaitlen (NVIDIA)
 description: Dask + CuPy + RL
 ---
 
-
-
 ## Summary
 
 [Last year](https://blog.dask.org/2019/08/09/image-itk) we experimented with

@@ -5,8 +5,6 @@ title: Dask Release 0.14.1
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Continuum Analytics](http://continuum.io),
 the [XDATA Program](http://www.darpa.mil/program/XDATA),
 and the Data Driven Discovery Initiative from the [Moore

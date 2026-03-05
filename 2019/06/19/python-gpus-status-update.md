@@ -6,8 +6,6 @@ author: Matthew Rocklin
 tags: python, scipy
 ---
 
-
-
 _This blogpost was delivered in talk form at the recent [PASC
 2019](https://pasc19.pasc-conference.org/) conference.
 [Slides for that talk are

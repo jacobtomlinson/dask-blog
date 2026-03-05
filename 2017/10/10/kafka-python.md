@@ -5,8 +5,6 @@ title: Notes on Kafka in Python
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 ## Summary
 
 <img src="https://kafka.apache.org/images/logo.png"

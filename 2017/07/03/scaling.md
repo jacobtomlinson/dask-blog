@@ -6,9 +6,7 @@ tags: Programming, Python, scipy, dask
 layout_style: wide
 ---
 
-
 <!-- markdownlint-disable-file -->
-
 
 <link href="https://cdn.pydata.org/bokeh/release/bokeh-0.12.6.min.css"
       rel="stylesheet" type="text/css">

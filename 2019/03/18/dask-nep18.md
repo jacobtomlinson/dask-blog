@@ -7,8 +7,6 @@ tags: Dask, Dask-GLM, CuPy, Sparse
 description: Advances on NEP-18
 ---
 
-
-
 ## Summary
 
 Dask is versatile for analytics parallelism, but there is still one issue to

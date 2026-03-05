@@ -7,8 +7,6 @@ tags: machine-learning, dask-ml, dask, ray
 description: Modern hyperparameter optimizations, Scikit-Learn support, framework support and scaling to many machines.
 ---
 
-
-
 Hyperparameter optimization is the process of deducing model parameters that
 can't be learned from data. This process is often time- and resource-consuming,
 especially in the context of deep learning. A good description of this process

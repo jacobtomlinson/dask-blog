@@ -7,7 +7,6 @@ tags: GPU
 canonical_link: https://medium.com/rapids-ai/easy-cpu-gpu-arrays-and-dataframes-run-your-dask-code-where-youd-like-e349d92351d
 ---
 
-
 _This article was originally posted on the [RAPIDS blog](https://medium.com/rapids-ai/easy-cpu-gpu-arrays-and-dataframes-run-your-dask-code-where-youd-like-e349d92351d)._
 
 It's now easy to switch between CPU (NumPy / Pandas) and GPU (CuPy / cuDF) in Dask.

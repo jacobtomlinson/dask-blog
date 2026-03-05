@@ -5,8 +5,6 @@ title: Who uses Dask?
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc](http://anaconda.com)_
 
 People often ask general questions like "Who uses Dask?" or more specific

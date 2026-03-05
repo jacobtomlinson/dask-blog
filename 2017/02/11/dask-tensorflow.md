@@ -5,8 +5,6 @@ title: Experiment with Dask and TensorFlow
 tags: Programming, Python, scipy
 ---
 
-
-
 _This work is supported by [Continuum Analytics](http://continuum.io)
 the [XDATA Program](http://www.darpa.mil/program/XDATA)
 and the Data Driven Discovery Initiative from the [Moore

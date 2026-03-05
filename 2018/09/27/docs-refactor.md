@@ -6,8 +6,6 @@ author: Matthew Rocklin and Tom Augspurger
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc](http://anaconda.com)_
 
 ## Summary

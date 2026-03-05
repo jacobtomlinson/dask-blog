@@ -7,8 +7,6 @@ tags: Programming, Python
 description: complex task graphs in the real world
 ---
 
-
-
 This post explores a real-world use case calculating complex credit models in Python using Dask.
 It is an example of a complex parallel system that is well outside of the traditional "big data" workloads.
 

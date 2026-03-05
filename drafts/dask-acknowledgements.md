@@ -6,8 +6,6 @@ tags: Programming, scipy, Python, dask
 description: credit is due
 ---
 
-
-
 ## tl;dr
 
 We highlight the people who thanklessly perform work on an open source software

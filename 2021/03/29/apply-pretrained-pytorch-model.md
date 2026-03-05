@@ -6,8 +6,6 @@ author: Nicholas Sofroniew, Genevieve Buckley
 tags: imaging, deep learning, PyTorch
 ---
 
-
-
 ## Executive Summary
 
 This post explores applying a pre-trained [PyTorch](https://pytorch.org/) model in parallel with Dask Array.

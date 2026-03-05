@@ -5,8 +5,6 @@ title: Dask Scaling Limits
 tags: Programming, Python, scipy, dask
 ---
 
-
-
 _This work is supported by [Anaconda Inc.](http://anaconda.com)_
 
 ## History

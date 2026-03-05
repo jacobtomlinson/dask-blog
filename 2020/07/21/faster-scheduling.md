@@ -5,8 +5,6 @@ title: Faster Scheduling
 author: Matthew Rocklin (Coiled)
 ---
 
-
-
 ## Summary
 
 This post discusses Dask overhead costs for task scheduling,

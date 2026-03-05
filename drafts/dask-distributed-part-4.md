@@ -6,8 +6,6 @@ tags: Programming, scipy, Python, dask
 description: The hardest step is standing up
 ---
 
-
-
 _This work is supported by [Continuum Analytics](http://continuum.io)
 and the [XDATA Program](http://www.darpa.mil/program/XDATA)
 as part of the [Blaze Project](http://blaze.pydata.org)_

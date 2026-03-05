@@ -6,8 +6,6 @@ author: Matthew Rocklin
 description: Trying hard not to lie
 ---
 
-
-
 People often ask me _"How many people use Dask?"_
 
 As with any non-invasive open source software, the answer to this is
