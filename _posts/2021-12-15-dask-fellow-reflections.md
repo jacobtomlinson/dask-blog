@@ -6,7 +6,6 @@ tags: [life science]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Summary
 

@@ -7,7 +7,6 @@ theme: twitter
 canonical_url: https://xarray.dev/blog/dask-detrending
 ---
 
-{% include JB/setup %}
 
 _This post was originally published on the [Xarray blog](https://xarray.dev/blog/dask-detrending)._
 

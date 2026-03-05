@@ -8,7 +8,6 @@ tags: [Programming, scipy, Python]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 _Disclaimer: I (the author) have attempted to write this from a general open source perspective. However I should mention that I am employed by Anaconda Inc and am a maintainer of a particular library mentioned below, Dask. The reader should keep this bias in mind when consuming the following arguments._
 

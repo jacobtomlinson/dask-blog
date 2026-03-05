@@ -8,7 +8,6 @@ tags: [Programming, dask]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 _This post was written by Jim Crist. The original post lives at
 [http://jcrist.github.io/dask-sklearn-part-1.html](http://jcrist.github.io/dask-sklearn-part-1.html)

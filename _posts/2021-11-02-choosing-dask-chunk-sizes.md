@@ -6,7 +6,6 @@ tags: [performance]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Summary
 

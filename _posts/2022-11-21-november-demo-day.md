@@ -6,7 +6,6 @@ tags: [Community]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 Once a month, the Dask Community team hosts Dask Demo Day: an informal and fun online hangout where folks can showcase new or lesser-known Dask features and the rest of us can learn about all the things we didn’t know Dask could do 😁
 

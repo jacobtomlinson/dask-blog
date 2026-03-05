@@ -6,7 +6,6 @@ tags: [User Survey]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 The Dask User Survey is out again! Tell us how you use Dask, and help us make it better for everyone.
 

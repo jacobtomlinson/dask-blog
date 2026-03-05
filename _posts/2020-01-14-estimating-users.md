@@ -7,7 +7,6 @@ theme: twitter
 author: Matthew Rocklin
 ---
 
-{% include JB/setup %}
 
 People often ask me _"How many people use Dask?"_
 

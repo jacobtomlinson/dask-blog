@@ -5,7 +5,6 @@ author: Julia Signell and Jacob Tomlinson
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

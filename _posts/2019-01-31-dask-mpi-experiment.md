@@ -7,7 +7,6 @@ tags: [MPI]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

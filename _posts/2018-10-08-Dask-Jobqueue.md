@@ -7,7 +7,6 @@ tags: [HPC, distributed, jobqueue]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 _This work was done in collaboration with [Matthew Rocklin](https://github.com/mrocklin) (Anaconda), Jim Edwards (NCAR), [Guillaume Eynard-Bontemps](https://github.com/guillaumeeb) (CNES), and [Loïc Estève](https://github.com/lesteve) (INRIA), and is supported, in part, by the US National Science Foundation [Earth Cube program](https://www.earthcube.org/). The dask-jobqueue package is a spinoff of the [Pangeo Project](https://medium.com/pangeo). This blogpost was previously published [here](https://medium.com/pangeo/dask-jobqueue-d7754e42ca53)_
 

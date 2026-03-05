@@ -6,7 +6,6 @@ tags: [Dask Summit, life science]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

@@ -6,7 +6,6 @@ tags: [imaging]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

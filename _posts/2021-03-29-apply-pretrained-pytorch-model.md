@@ -6,7 +6,6 @@ tags: [imaging, deep learning, PyTorch]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

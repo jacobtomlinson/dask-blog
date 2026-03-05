@@ -7,7 +7,6 @@ tags: [Programming, Python, scipy, dask]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

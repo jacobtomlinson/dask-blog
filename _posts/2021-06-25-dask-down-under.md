@@ -6,7 +6,6 @@ tags: [Dask Summit, Australia, geoscience]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

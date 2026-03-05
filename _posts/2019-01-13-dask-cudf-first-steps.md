@@ -6,7 +6,6 @@ tags: [GPU, Pandas]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

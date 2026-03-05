@@ -6,7 +6,6 @@ tags: [dataframe, GPU]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Summary
 

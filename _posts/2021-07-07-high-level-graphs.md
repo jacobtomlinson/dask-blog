@@ -5,7 +5,6 @@ author: Genevieve Buckley
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

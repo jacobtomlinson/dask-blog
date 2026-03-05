@@ -6,7 +6,6 @@ tags: [python, scipy, scikit-image, dask-image]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

@@ -6,7 +6,6 @@ tags: [life science]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 Dask was awarded funding last year in round 2 of the [CZI Essential Open Source Software](https://chanzuckerberg.com/eoss/proposals/) grant program.
 That funding was used to hire [Genevieve Buckley](https://github.com/GenevieveBuckley/) to work on Dask with a focus on [life sciences](https://blog.dask.org/2021/03/04/the-life-science-community).

@@ -5,7 +5,6 @@ author: Matthew Rocklin
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 The annual Dask user survey is under way and currently accepting responses at [dask.org/survey](https://dask.org/survey).
 

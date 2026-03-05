@@ -7,7 +7,6 @@ tags: [dask, dataframe]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Groupby Aggregations with Dask
 

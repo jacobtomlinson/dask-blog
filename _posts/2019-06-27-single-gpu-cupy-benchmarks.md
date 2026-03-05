@@ -7,7 +7,6 @@ draft: true
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Summary
 

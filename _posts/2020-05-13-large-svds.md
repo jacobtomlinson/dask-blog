@@ -7,7 +7,6 @@ tags: [GPU, array, CuPy]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Summary
 

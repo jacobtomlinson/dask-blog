@@ -6,7 +6,6 @@ tags: [dataframe, IO]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 _Update May 3rd 2023: [Clarify GPU recommendations](https://github.com/dask/dask-blog/pull/166)._
 

@@ -7,7 +7,6 @@ tags: []
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Summary
 

@@ -6,7 +6,6 @@ tags: [memory, dask, distributed, profiling, ram]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 Using too much computing resources can get expensive when you're scaling up in the cloud.
 

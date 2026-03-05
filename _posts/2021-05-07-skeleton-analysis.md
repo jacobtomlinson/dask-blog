@@ -6,7 +6,6 @@ tags: [imaging, life science, skan, skeleton analysis]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Executive Summary
 

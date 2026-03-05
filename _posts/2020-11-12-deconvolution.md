@@ -6,7 +6,6 @@ author: John Kirkham (NVIDIA) and Ben Zaitlen (NVIDIA)
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## Summary
 

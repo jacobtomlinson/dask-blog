@@ -8,7 +8,6 @@ tags: [Programming, scipy, Python, dask]
 theme: twitter
 ---
 
-{% include JB/setup %}
 
 ## tl;dr
 
