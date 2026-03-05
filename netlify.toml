@@ -1,9 +1,7 @@
 [build]
   publish = "_build/dirhtml"
   command = """
-    pip install uv && \
-    uv pip install --system . && \
-    sphinx-build -b dirhtml . _build/dirhtml
+    uv run sphinx-build -b dirhtml . _build/dirhtml
   """
 
 [build.environment]
