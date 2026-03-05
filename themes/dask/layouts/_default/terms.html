@@ -5,7 +5,11 @@
   </div>
   <ul class="tag-list">
     {{- range .Pages }}
-    <li><a href="{{ .RelPermalink }}">{{ .Title }} <span class="tag-count">({{ len .Pages }})</span></a></li>
+    <li>
+      <a href="{{ .RelPermalink }}"
+        >{{ .Title }} <span class="tag-count">({{ len .Pages }})</span></a
+      >
+    </li>
     {{- end }}
   </ul>
 </div>

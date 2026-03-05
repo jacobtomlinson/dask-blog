@@ -20,10 +20,12 @@ The Dask blog (`blog.dask.org`) is a 158-post Jekyll blog using Jekyll-Bootstrap
 ## Phase 1: Hugo Project Setup
 
 ### 1.1 Branch strategy
+
 - Create `hugo-migration` branch from `gh-pages`
 - `gh-pages` continues serving the live Jekyll site until cutover
 
 ### 1.2 Create `hugo.toml`
+
 ```toml
 baseURL = "https://blog.dask.org"
 languageCode = "en-us"
@@ -85,6 +87,7 @@ enableGitInfo = true
 ```
 
 ### 1.3 Target directory structure
+
 ```
 dask-blog/
   hugo.toml
@@ -112,6 +115,7 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 ### 2.1 Design System (extracted from dask.org via Playwright)
 
 **Typography:**
+
 - Font family: `Inter, sans-serif` (dask.org uses Inter throughout)
 - Body text: 16px base (modernized from current 13px), line-height 1.5
 - H1: ~34px, weight 700
@@ -120,6 +124,7 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 - Monospace: `"SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace`
 
 **Color Palette (from dask.org):**
+
 - Dark background: `#262326` (rgb(38,35,38)) — navbar, dark sections
 - Near-black text: `#080815` (rgb(8,8,21)) — button text, dark UI text
 - White: `#ffffff` — light backgrounds, text on dark
@@ -132,6 +137,7 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 - Code block bg: dark with white text (on dark sections of dask.org)
 
 **Light Theme (`prefers-color-scheme: light` / default):**
+
 ```css
 :root {
   --color-bg: #ffffff;
@@ -140,10 +146,10 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
   --color-text-secondary: #666666;
   --color-link: #0088cc;
   --color-link-hover: #005580;
-  --color-accent: #FFC11E;            /* dask gold */
-  --color-navbar-bg: #262326;          /* dask dark */
+  --color-accent: #ffc11e; /* dask gold */
+  --color-navbar-bg: #262326; /* dask dark */
   --color-navbar-text: #ffffff;
-  --color-footer-bg: #33363D;
+  --color-footer-bg: #33363d;
   --color-footer-text: #ffffff;
   --color-code-bg: #f5f5f5;
   --color-code-text: #333333;
@@ -153,16 +159,18 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 ```
 
 **Dark Theme (`prefers-color-scheme: dark`):**
+
 ```css
-[data-theme="dark"], @media (prefers-color-scheme: dark) {
+[data-theme="dark"],
+@media (prefers-color-scheme: dark) {
   :root {
     --color-bg: #1a1a2e;
     --color-bg-secondary: #262326;
     --color-text: #e0e0e0;
     --color-text-secondary: #999999;
-    --color-link: #FFC11E;              /* gold links on dark */
+    --color-link: #ffc11e; /* gold links on dark */
     --color-link-hover: #ffd561;
-    --color-accent: #FFC11E;
+    --color-accent: #ffc11e;
     --color-navbar-bg: #080815;
     --color-navbar-text: #ffffff;
     --color-footer-bg: #080815;
@@ -176,12 +184,14 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 ```
 
 **Theme Toggle:**
+
 - A sun/moon button in the navbar
 - JavaScript: toggles `data-theme` attribute on `<html>`, persists choice to `localStorage`
 - Default: follow system preference (`prefers-color-scheme`)
 - Small inline `<script>` in `<head>` to apply saved preference before paint (avoids flash)
 
 ### 2.2 CSS: `themes/dask/assets/css/main.css`
+
 - Vanilla CSS with custom properties as above
 - Minimal reset, Inter font via Google Fonts or bundled
 - All colors reference `var(--color-*)` tokens — entire theme switches by changing the custom properties
@@ -192,6 +202,7 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 - Footer: dark bg (`--color-footer-bg`) matching dask.org footer style
 
 ### 2.3 CSS: `themes/dask/assets/css/syntax.css`
+
 - Two sets of syntax highlighting tokens: light and dark
 - Light: port existing `css/pygments/pygments.css`
 - Dark: inverted variant (light text on dark code bg)
@@ -199,36 +210,38 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 
 ### 2.3 Layouts
 
-| File | Purpose |
-|------|---------|
-| `_default/baseof.html` | HTML shell: head partial, header, main block, footer, analytics |
-| `posts/single.html` | Single post: title, tagline, author, date, content, comments |
-| `posts/list.html` | Post listing (section page for /posts/) |
-| `index.html` | Homepage: list all non-draft posts with links and dates |
-| `_default/taxonomy.html` | Individual tag page (e.g., `/tag/python/`) |
-| `_default/terms.html` | All tags overview (`/tag/`) |
-| `404.html` | Custom 404 page |
+| File                     | Purpose                                                         |
+| ------------------------ | --------------------------------------------------------------- |
+| `_default/baseof.html`   | HTML shell: head partial, header, main block, footer, analytics |
+| `posts/single.html`      | Single post: title, tagline, author, date, content, comments    |
+| `posts/list.html`        | Post listing (section page for /posts/)                         |
+| `index.html`             | Homepage: list all non-draft posts with links and dates         |
+| `_default/taxonomy.html` | Individual tag page (e.g., `/tag/python/`)                      |
+| `_default/terms.html`    | All tags overview (`/tag/`)                                     |
+| `404.html`               | Custom 404 page                                                 |
 
 ### 2.5 Partials
 
-| File | Purpose |
-|------|---------|
-| `head.html` | Meta tags, CSS (fingerprinted), canonical URL, MathJax, feed link, **theme-init script** (reads localStorage, applies `data-theme` before paint) |
-| `header.html` | Dark navbar (`--color-navbar-bg`), Dask logo, nav links (Blog, Tags, Docs), **theme toggle button** (sun/moon icon) |
-| `footer.html` | Dark footer (`--color-footer-bg`) matching dask.org footer — copyright, Atom feed link, social links |
-| `comments.html` | Disqus embed script (conditional on `disqusShortname`) |
-| `analytics.html` | Google Tag Manager script (conditional on `gtmID`) |
-| `math.html` | MathJax v3 configuration and script load |
-| `meta.html` | SEO: description, canonical, og:url meta tags |
-| `theme-toggle.html` | JS for theme toggle: flip `data-theme`, persist to `localStorage`, update button icon |
+| File                | Purpose                                                                                                                                          |
+| ------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
+| `head.html`         | Meta tags, CSS (fingerprinted), canonical URL, MathJax, feed link, **theme-init script** (reads localStorage, applies `data-theme` before paint) |
+| `header.html`       | Dark navbar (`--color-navbar-bg`), Dask logo, nav links (Blog, Tags, Docs), **theme toggle button** (sun/moon icon)                              |
+| `footer.html`       | Dark footer (`--color-footer-bg`) matching dask.org footer — copyright, Atom feed link, social links                                             |
+| `comments.html`     | Disqus embed script (conditional on `disqusShortname`)                                                                                           |
+| `analytics.html`    | Google Tag Manager script (conditional on `gtmID`)                                                                                               |
+| `math.html`         | MathJax v3 configuration and script load                                                                                                         |
+| `meta.html`         | SEO: description, canonical, og:url meta tags                                                                                                    |
+| `theme-toggle.html` | JS for theme toggle: flip `data-theme`, persist to `localStorage`, update button icon                                                            |
 
 ### 2.5 Feed templates
+
 - `index.atom.xml` — Main Atom feed (all non-draft posts)
 - `index.feed.python.xml` — Posts tagged "Python"
 - `index.feed.scipy.xml` — Posts tagged "scipy"
 - `index.feed.sympy.xml` — Posts tagged "sympy"
 
 ### 2.6 Shortcodes
+
 - `gist.html` — For the single `{% gist %}` usage (converts to `{{</* gist ID */>}}`)
 
 ---
@@ -236,35 +249,43 @@ Design direction: **Aligned with dask.org** — the blog should feel like part o
 ## Phase 3: Content Migration
 
 ### 3.1 Write Python migration script (`migrate.py`)
+
 Transforms all 158 posts from Jekyll to Hugo format:
 
 **Front matter changes:**
+
 - Remove: `layout: post`, `theme: twitter`
 - Keep as-is: `title`, `author`, `tags`, `tagline`, `canonical_url`, `draft`
 - Add: `date` field (extracted from filename `YYYY-MM-DD-slug.md`)
 - Convert `layout: widepost` → `layout_style: wide` (custom param)
 
 **Body changes:**
+
 - Strip `{% include JB/setup %}` from all 150 posts
 - Convert `{% gist ID %}` → `{{< gist ID >}}` (1 post)
 - Move inline `<meta>` tag to front matter `description` (1 post)
 
 ### 3.2 Move static assets
+
 ```bash
 mv images/ static/images/     # Preserves /images/ URL paths
 mv storage/ static/storage/
 ```
 
 ### 3.3 Create homepage
+
 `content/_index.md` with just front matter (title). The `index.html` template handles listing.
 
 ### 3.4 Documentation redirect
+
 `static/documentation.html` — meta-refresh redirect to `https://dask.org`
 
 ### 3.5 Permalink preservation
+
 Hugo config `posts = "/:year/:month/:day/:title/"` produces identical URLs to Jekyll's `/:categories/:year/:month/:day/:title` (since no posts use categories).
 
 ### 3.6 Tag URL preservation
+
 Setting `[taxonomies] tag = "tag"` produces `/tag/<name>/` matching Jekyll's plugin output.
 
 ---
@@ -274,10 +295,12 @@ Setting `[taxonomies] tag = "tag"` produces `/tag/<name>/` matching Jekyll's plu
 Playwright is used during development to verify migration correctness, **not** as a permanent CI suite.
 
 ### 4.1 Setup
+
 - `package.json` at root with `@playwright/test` devDependency
 - `playwright/playwright.config.ts` with `webServer` pointing to `hugo server`
 
 ### 4.2 Test coverage (development verification)
+
 - **Homepage**: loads, lists 150+ posts, has correct title
 - **Every post URL**: returns 200 (iterate all posts from homepage links)
 - **Sample posts**: verify title, author, content renders
@@ -301,20 +324,24 @@ Playwright is used during development to verify migration correctness, **not** a
 ## Phase 5: CI/CD & Cleanup
 
 ### 5.1 GitHub Actions: Hugo build + deploy (`.github/workflows/build.yml`)
+
 - Trigger: push to `gh-pages`, PRs, nightly schedule, manual dispatch
 - Steps: checkout (fetch-depth 0), setup Hugo, `hugo --minify`, deploy to GitHub Pages via Actions
 - Requires: changing repo Settings → Pages → Source to "GitHub Actions"
 
 ### 5.2 Update pre-commit workflow
+
 - Keep prettier + markdownlint, update versions
 - Update `.prettierignore` and `.gitignore` for Hugo paths (`public/`, `resources/`, `node_modules/`)
 
 ### 5.3 Delete Jekyll artifacts
+
 Remove: `_config.yml`, `_includes/`, `_layouts/`, `_plugins/`, `_posts/`, `assets/`, `css/`, `Gemfile`, `.ruby-version`, `Rakefile`, `atom.xml`, `feed.*.xml`, `sitemap.txt`, `index.md`, `tags.html`, `documentation.html`, `404.html`, `changelog.md`, `scripts/`
 
 Keep: `CNAME`, `.github/`, `README.md` (updated)
 
 ### 5.4 Delete refresh workflow
+
 `.github/workflows/refresh.yml` is replaced by the schedule trigger in `build.yml`.
 
 ---
@@ -337,24 +364,26 @@ Keep: `CNAME`, `.github/`, `README.md` (updated)
 
 ## Key Risks & Mitigations
 
-| Risk | Mitigation |
-|------|-----------|
-| Permalink mismatch (slug differences) | Playwright tests check all 150+ post URLs return 200 |
-| Raw HTML breaks (iframes, tables) | `unsafe = true` in Goldmark config; test posts with HTML |
-| MathJax `$` conflicts with Goldmark | Passthrough extension configured; test 12 math posts |
-| Author field with HTML links | Use `safeHTML` in template: `{{ .Params.author \| safeHTML }}` |
-| Tag URL case sensitivity | Hugo lowercases by default; verify feed templates use lowercase keys |
-| Feed URL preservation | Custom output formats produce `atom.xml`, `feed.python.xml` at same paths |
-| GitHub Pages deployment cutover | Build workflow + settings change coordinated; CNAME unchanged |
+| Risk                                  | Mitigation                                                                |
+| ------------------------------------- | ------------------------------------------------------------------------- |
+| Permalink mismatch (slug differences) | Playwright tests check all 150+ post URLs return 200                      |
+| Raw HTML breaks (iframes, tables)     | `unsafe = true` in Goldmark config; test posts with HTML                  |
+| MathJax `$` conflicts with Goldmark   | Passthrough extension configured; test 12 math posts                      |
+| Author field with HTML links          | Use `safeHTML` in template: `{{ .Params.author \| safeHTML }}`            |
+| Tag URL case sensitivity              | Hugo lowercases by default; verify feed templates use lowercase keys      |
+| Feed URL preservation                 | Custom output formats produce `atom.xml`, `feed.python.xml` at same paths |
+| GitHub Pages deployment cutover       | Build workflow + settings change coordinated; CNAME unchanged             |
 
 ## Verification
 
 After each phase, verify locally with:
+
 ```bash
 hugo server --buildDrafts=false --disableFastRender
 ```
 
 Full verification before merge:
+
 ```bash
 cd playwright && npx playwright test
 ```

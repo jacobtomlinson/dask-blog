@@ -19,7 +19,7 @@ test.describe("Homepage", () => {
     await expect(page.locator('.navbar-nav a[href="/"]')).toBeVisible();
     await expect(page.locator('.navbar-nav a[href="/tag/"]')).toBeVisible();
     await expect(
-      page.locator('.navbar-nav a[href="https://www.dask.org"]'),
+      page.locator('.navbar-nav a[href="https://www.dask.org"]')
     ).toBeVisible();
   });
 });
@@ -49,7 +49,7 @@ test.describe("Sample posts", () => {
   test("renders a recent post with title and content", async ({ page }) => {
     await page.goto("/2024/05/30/dask-dataframe-is-fast-now/");
     await expect(page.locator(".post-header h1")).toContainText(
-      "Dask DataFrame is Fast Now",
+      "Dask DataFrame is Fast Now"
     );
     await expect(page.locator(".post-meta")).toContainText("Patrick Hoefler");
     await expect(page.locator(".post-content")).not.toBeEmpty();
@@ -58,7 +58,7 @@ test.describe("Sample posts", () => {
   test("renders an older post", async ({ page }) => {
     await page.goto("/2014/12/27/towards-out-of-core-nd-arrays/");
     await expect(page.locator(".post-header h1")).toContainText(
-      "Towards Out-of-core ND-Arrays",
+      "Towards Out-of-core ND-Arrays"
     );
     await expect(page.locator(".post-content")).not.toBeEmpty();
   });
@@ -157,7 +157,7 @@ test.describe("Canonical URLs", () => {
     const canonical = page.locator('link[rel="canonical"]');
     await expect(canonical).toHaveAttribute(
       "href",
-      "https://docs.coiled.io/blog/dask-dataframe-is-fast.html",
+      "https://docs.coiled.io/blog/dask-dataframe-is-fast.html"
     );
   });
 
@@ -205,14 +205,14 @@ test.describe("Light/Dark theme", () => {
     // Click toggle to switch to dark
     await toggle.click();
     const theme = await page.evaluate(() =>
-      document.documentElement.getAttribute("data-theme"),
+      document.documentElement.getAttribute("data-theme")
     );
     expect(theme).toBe("dark");
 
     // Click again to switch back to light
     await toggle.click();
     const theme2 = await page.evaluate(() =>
-      document.documentElement.getAttribute("data-theme"),
+      document.documentElement.getAttribute("data-theme")
     );
     expect(theme2).toBe("light");
   });
@@ -224,7 +224,7 @@ test.describe("Light/Dark theme", () => {
     // Reload and check
     await page.reload();
     const theme = await page.evaluate(() =>
-      document.documentElement.getAttribute("data-theme"),
+      document.documentElement.getAttribute("data-theme")
     );
     expect(theme).toBe("dark");
   });
@@ -233,8 +233,8 @@ test.describe("Light/Dark theme", () => {
     await page.emulateMedia({ colorScheme: "dark" });
     await page.goto("/");
     // With dark preference and no saved theme, dark colors should apply
-    const bgColor = await page.evaluate(() =>
-      getComputedStyle(document.body).backgroundColor,
+    const bgColor = await page.evaluate(
+      () => getComputedStyle(document.body).backgroundColor
     );
     // Dark bg is #1a1a2e = rgb(26, 26, 46)
     expect(bgColor).toBe("rgb(26, 26, 46)");

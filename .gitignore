@@ -6,7 +6,7 @@ resources/
 node_modules/
 playwright/test-results/
 playwright/playwright-report/
-.playwright-cli
+.playwright-cli/
 
 # OS
 .DS_Store

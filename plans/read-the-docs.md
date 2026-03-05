@@ -76,29 +76,29 @@ Key details:
 If SCSS is ever added to the theme, install the extended version via asdf by prefixing the version with `extended_`:
 
 ```yaml
-    create_environment:
-      - asdf plugin add hugo
-      - asdf install hugo extended_0.147.0
-      - asdf global hugo extended_0.147.0
+create_environment:
+  - asdf plugin add hugo
+  - asdf install hugo extended_0.147.0
+  - asdf global hugo extended_0.147.0
 ```
 
 Or download a prebuilt binary directly:
 
 ```yaml
-    install:
-      - wget -q https://github.com/gohugoio/hugo/releases/download/v0.147.0/hugo_extended_0.147.0_linux-amd64.tar.gz
-      - tar -xzf hugo_extended_0.147.0_linux-amd64.tar.gz
-      - mv hugo $READTHEDOCS_VIRTUALENV_PATH/bin/
+install:
+  - wget -q https://github.com/gohugoio/hugo/releases/download/v0.147.0/hugo_extended_0.147.0_linux-amd64.tar.gz
+  - tar -xzf hugo_extended_0.147.0_linux-amd64.tar.gz
+  - mv hugo $READTHEDOCS_VIRTUALENV_PATH/bin/
 ```
 
 ## Key RTD Environment Variables
 
-| Variable | Description |
-|----------|-------------|
-| `$READTHEDOCS_OUTPUT` | Base output path (append `/html/`) |
+| Variable                       | Description                                            |
+| ------------------------------ | ------------------------------------------------------ |
+| `$READTHEDOCS_OUTPUT`          | Base output path (append `/html/`)                     |
 | `$READTHEDOCS_VIRTUALENV_PATH` | Python venv path (useful for placing binaries on PATH) |
-| `$READTHEDOCS_VERSION` | Version slug (`latest`, branch name, etc.) |
-| `$READTHEDOCS_CANONICAL_URL` | Canonical base URL |
+| `$READTHEDOCS_VERSION`         | Version slug (`latest`, branch name, etc.)             |
+| `$READTHEDOCS_CANONICAL_URL`   | Canonical base URL                                     |
 
 ## References
 

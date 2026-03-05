@@ -12,14 +12,14 @@ Update the design of this Hugo blog to visually match the public Dask website (d
 
 ## Design Decisions
 
-| Decision               | Choice                                                            |
-| ---------------------- | ----------------------------------------------------------------- |
-| Dark mode              | **Keep** the light/dark toggle                                    |
-| Index page filtering   | **No** interactive tag filtering or sorting — keep simple list    |
-| Navbar links           | Blog-focused: Blog, Tags, Docs + theme toggle (restyled visually) |
-| Redesign scope         | **Full** — index, single posts, tag pages, navbar, footer         |
-| Typography units       | **rem/px** (standard, not viewport-width units)                   |
-| Content max-width      | **~900px** (widen from current 740px)                             |
+| Decision             | Choice                                                            |
+| -------------------- | ----------------------------------------------------------------- |
+| Dark mode            | **Keep** the light/dark toggle                                    |
+| Index page filtering | **No** interactive tag filtering or sorting — keep simple list    |
+| Navbar links         | Blog-focused: Blog, Tags, Docs + theme toggle (restyled visually) |
+| Redesign scope       | **Full** — index, single posts, tag pages, navbar, footer         |
+| Typography units     | **rem/px** (standard, not viewport-width units)                   |
+| Content max-width    | **~900px** (widen from current 740px)                             |
 
 ## Color Palette (from dask.css reference)
 
