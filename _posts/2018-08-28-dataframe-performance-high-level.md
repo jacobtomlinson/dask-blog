@@ -6,7 +6,6 @@ tags: [Programming, Python, scipy, dask]
 theme: twitter
 ---
 
-
 _This work is supported by [Anaconda Inc](http://anaconda.com)_
 
 ## Question

@@ -6,7 +6,6 @@ tags: [Dask Summit, Australia, geoscience]
 theme: twitter
 ---
 
-
 ## Executive Summary
 
 Dask Down Under was a special event held for the first time last month during the 2021 Dask Summit.

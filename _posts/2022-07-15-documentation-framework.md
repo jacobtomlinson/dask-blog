@@ -5,7 +5,6 @@ author: Julia Signell and Jacob Tomlinson
 theme: twitter
 ---
 
-
 ## Executive Summary
 
 Yesterday at the Dask BOF at [SciPy](https://www.scipy2022.scipy.org/) we were talking about the recent docs work and how we can fill holes in our documentation. We want to come up with a strategy to improve things.

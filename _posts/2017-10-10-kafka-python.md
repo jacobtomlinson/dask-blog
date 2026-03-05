@@ -6,7 +6,6 @@ tags: [Programming, Python, scipy, dask]
 theme: twitter
 ---
 
-
 ## Summary
 
 <img src="https://kafka.apache.org/images/logo.png"

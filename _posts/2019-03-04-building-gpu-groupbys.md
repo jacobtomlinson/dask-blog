@@ -6,7 +6,6 @@ tags: [dataframe, GPU, RAPIDS]
 theme: twitter
 ---
 
-
 ## Summary
 
 We've sufficiently aligned Dask DataFrame and cuDF to get groupby aggregations

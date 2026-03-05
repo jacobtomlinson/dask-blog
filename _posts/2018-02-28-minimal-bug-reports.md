@@ -6,7 +6,6 @@ tags: [Programming, scipy, Python]
 theme: twitter
 ---
 
-
 Following up on a post on [supporting users in open source](../../../2016/08/25/supporting-users)
 this post lists some suggestions on how to ask a maintainer to help you with a problem.
 

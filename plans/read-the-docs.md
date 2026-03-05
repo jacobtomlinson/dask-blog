@@ -99,20 +99,20 @@ In the RTD dashboard:
 
 ## Potential Issues
 
-| Issue | Mitigation |
-|-------|-----------|
-| `github-pages` gem tries to fetch GitHub metadata | Handle per Step 2 |
+| Issue                                                               | Mitigation                                              |
+| ------------------------------------------------------------------- | ------------------------------------------------------- |
+| `github-pages` gem tries to fetch GitHub metadata                   | Handle per Step 2                                       |
 | Ruby version mismatch (Gemfile.lock pins 3.4.8, RTD offers 3.3/3.4) | Use `ruby: "3.4"` in RTD config, or update Gemfile.lock |
-| `jekyll-gist` plugin needs network access | Should work — RTD builds have internet access |
-| Large image directory (~92MB in `_site/`) may slow builds | RTD caches builds, should be manageable |
-| Future-dated posts need daily rebuilds | Configure RTD build automation or external cron |
+| `jekyll-gist` plugin needs network access                           | Should work — RTD builds have internet access           |
+| Large image directory (~92MB in `_site/`) may slow builds           | RTD caches builds, should be manageable                 |
+| Future-dated posts need daily rebuilds                              | Configure RTD build automation or external cron         |
 
 ## File Changes Summary
 
-| File | Action |
-|------|--------|
-| `.readthedocs.yaml` | **Create** — RTD build configuration |
-| `_config.yml` | **Maybe modify** — Handle `github: [metadata]` |
-| `.github/workflows/refresh.yml` | **Remove or update** — No longer needed for GH Pages |
-| `CNAME` | **Keep** — Doesn't affect RTD, useful if we ever fall back |
-| `environment.yml` | **Keep** — Still useful for local development |
+| File                            | Action                                                     |
+| ------------------------------- | ---------------------------------------------------------- |
+| `.readthedocs.yaml`             | **Create** — RTD build configuration                       |
+| `_config.yml`                   | **Maybe modify** — Handle `github: [metadata]`             |
+| `.github/workflows/refresh.yml` | **Remove or update** — No longer needed for GH Pages       |
+| `CNAME`                         | **Keep** — Doesn't affect RTD, useful if we ever fall back |
+| `environment.yml`               | **Keep** — Still useful for local development              |

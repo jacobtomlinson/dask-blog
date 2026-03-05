@@ -6,7 +6,6 @@ tags: [dask, dataframe]
 theme: twitter
 ---
 
-
 _This work is supported by [Anaconda Inc](http://anaconda.com)_
 
 ## Summary

@@ -13,35 +13,43 @@ Update the design of this Jekyll blog (blog.dask.org) to match the look and feel
 ## Design Decisions
 
 ### CSS Strategy
+
 - **Drop Bootstrap 3.3.7** — replace with the reference `dask.css` as the base stylesheet
 - Add blog-specific styles on top of the reference CSS
 - **Convert vw units to rem/px** — the reference CSS uses viewport-relative units extensively; convert these to rem/px with media queries for better long-form reading
 
 ### Typography
+
 - **Use Inter** as the primary sans-serif font (loaded from Google Fonts CDN), matching dask.org
 
 ### Color Scheme
+
 - **Dark nav and footer** matching dask.org (primary dark: `#080815`, accents: yellow `#ffc11e`, red `#ef1561`)
 - **Light/white content area** for blog readability
 - Dask accent colors for links, buttons, and interactive elements
 
 ### Index Page
+
 - **Styled list** — keep the list-based post layout but restyle it to match dask.org aesthetics (colors, fonts, spacing, visual hierarchy)
 - No JavaScript-powered filtering or sorting
 
 ### Navigation & Footer
+
 - **Full dask.org navigation bar** — replicate the header nav (Get Started, Community, Blog, Docs, social icons) so the blog feels integrated with the main site
 - **Full dask.org footer** — replicate the comprehensive footer with links, branding, and social media
 
 ### Post Pages
+
 - **Redesign post pages** — update with new typography, colors, header styling, and consistent nav/footer
 
 ### Tags Page
+
 - **Restyle tags page** (`/tags.html`) to be consistent with the new design system
 
 ## Scope of Changes
 
 ### Files to Modify
+
 - `_includes/themes/twitter/default.html` — main HTML wrapper (nav, footer, head assets)
 - `_includes/themes/twitter/post.html` — post layout template
 - `_includes/themes/twitter/page.html` — page layout template
@@ -51,10 +59,12 @@ Update the design of this Jekyll blog (blog.dask.org) to match the look and feel
 - `_config.yml` — may need updates for new asset paths
 
 ### Files to Add
+
 - New CSS file(s) based on the reference `dask.css`, adapted for blog use
 - Possibly new include files for the updated nav/footer components
 
 ### Files to Remove/Deprecate
+
 - `assets/themes/twitter/bootstrap/` — Bootstrap CSS files (replaced by new CSS)
 - `assets/themes/twitter/css/style.css` — old custom styles (merged into new CSS)
 

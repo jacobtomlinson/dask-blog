@@ -6,7 +6,6 @@ tags: [kubernetes, dask-kubernetes, deployment, clusters]
 theme: twitter
 ---
 
-
 We are excited to announce that the [Dask Kubernetes Operator](https://kubernetes.dask.org/en/latest/operator.html) is now generally available 🎉!
 
 Notable new features include:

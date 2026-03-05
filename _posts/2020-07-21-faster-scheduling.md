@@ -7,7 +7,6 @@ tags: []
 theme: twitter
 ---
 
-
 ## Summary
 
 This post discusses Dask overhead costs for task scheduling,

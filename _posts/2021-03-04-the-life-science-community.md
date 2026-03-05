@@ -6,7 +6,6 @@ tags: [imaging]
 theme: twitter
 ---
 
-
 ## Executive Summary
 
 Dask wants to better support the needs of life scientists. We've been getting to know the community, in order to better understand:

@@ -4,15 +4,12 @@
       <h1>{{ page.title }}</h1>
       {% if page.tagline %}
       <p class="post-tagline">{{ page.tagline }}</p>
-      {% endif %}
-      {% if page.author %}
+      {% endif %} {% if page.author %}
       <p class="post-meta">By {{ page.author }}</p>
       {% endif %}
     </div>
 
-    <div class="post-body">
-      {{ content }}
-    </div>
+    <div class="post-body">{{ content }}</div>
 
     <hr />
     {% include JB/comments %}

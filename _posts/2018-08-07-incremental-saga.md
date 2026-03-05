@@ -6,7 +6,6 @@ tags: [Programming, Python, scipy, dask]
 theme: twitter
 ---
 
-
 _This work is supported by [ETH Zurich](https://www.ethz.ch/en.html), [Anaconda
 Inc](http://anaconda.com), and the [Berkeley Institute for Data
 Science](https://bids.berkeley.edu/)_

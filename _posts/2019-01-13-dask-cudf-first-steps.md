@@ -6,7 +6,6 @@ tags: [GPU, Pandas]
 theme: twitter
 ---
 
-
 ## Executive Summary
 
 We're building a distributed GPU Pandas dataframe out of

@@ -6,7 +6,6 @@ tags: [life science, image analysis]
 theme: twitter
 ---
 
-
 ## Executive Summary
 
 This blogpost shows a case study where a researcher uses Dask for mosaic image fusion.

@@ -6,7 +6,6 @@ tags: [Programming, Python, scipy, dask]
 theme: twitter
 ---
 
-
 _This work is supported by [Continuum Analytics](http://continuum.io)
 and the Data Driven Discovery Initiative from the [Moore
 Foundation](https://www.moore.org/)._

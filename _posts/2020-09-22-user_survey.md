@@ -6,7 +6,6 @@ tags: [User Survey]
 theme: twitter
 ---
 
-
 <style type="text/css">
 table td {
     background: none;

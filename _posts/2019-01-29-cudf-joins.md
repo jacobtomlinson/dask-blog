@@ -6,7 +6,6 @@ tags: [dataframe, GPU]
 theme: twitter
 ---
 
-
 ## Summary
 
 We experiment with single-node multi-GPU joins using cuDF and Dask. We find

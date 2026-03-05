@@ -12,10 +12,11 @@ group: navigation
 </div>
 
 <ul class="tag-box">
-  {% assign tags_list = site.tags %}
-  {% for tag in tags_list %}
+  {% assign tags_list = site.tags %} {% for tag in tags_list %}
   <li>
-    <a href="#{{ tag[0] | slugify }}-ref">{{ tag[0] }} <span class="count">({{ tag[1].size }})</span></a>
+    <a href="#{{ tag[0] | slugify }}-ref"
+      >{{ tag[0] }} <span class="count">({{ tag[1].size }})</span></a
+    >
   </li>
   {% endfor %}
 </ul>

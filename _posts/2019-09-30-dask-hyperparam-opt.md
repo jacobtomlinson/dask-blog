@@ -6,7 +6,6 @@ tags: [machine-learning, dask-ml]
 theme: twitter
 ---
 
-
 _[Scott Sievert] wrote this post. The original post lives at
 [https://stsievert.com/blog/2019/09/27/dask-hyperparam-opt/][orig-post] with better
 styling. This work is supported by Anaconda, Inc._

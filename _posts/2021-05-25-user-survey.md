@@ -6,7 +6,6 @@ tags: [User Survey]
 theme: twitter
 ---
 
-
 The Dask User Survey is out again! Tell us how you use Dask, and help us make it better for everyone.
 
 [Click this link to take the survey](https://forms.gle/F7QSGpSHwBWu8NCg8).

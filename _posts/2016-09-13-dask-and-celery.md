@@ -6,7 +6,6 @@ tags: [Programming, Python, scipy]
 theme: twitter
 ---
 
-
 This post compares two Python distributed task processing systems,
 Dask.distributed and Celery.
 

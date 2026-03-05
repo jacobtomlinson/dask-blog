@@ -8,7 +8,6 @@ tags: [Programming, scipy, Python, dask]
 theme: twitter
 ---
 
-
 ## tl;dr
 
 We highlight the people who thanklessly perform work on an open source software

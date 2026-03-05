@@ -6,7 +6,6 @@ tags: [Programming, scipy, Python, dask]
 theme: twitter
 ---
 
-
 <img src="http://dask.readthedocs.io/en/latest/_images/dask_horizontal.svg"
      align="right"
      width="20%">

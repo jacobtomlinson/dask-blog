@@ -6,7 +6,6 @@ tags: [imaging]
 theme: twitter
 ---
 
-
 ## Executive Summary
 
 We look at how to create a basic image segmentation pipeline, using the [dask-image](http://image.dask.org/en/latest/) library.

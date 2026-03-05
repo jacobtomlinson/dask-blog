@@ -6,7 +6,6 @@ tags: [imaging, deep learning, PyTorch]
 theme: twitter
 ---
 
-
 ## Executive Summary
 
 This post explores applying a pre-trained [PyTorch](https://pytorch.org/) model in parallel with Dask Array.
