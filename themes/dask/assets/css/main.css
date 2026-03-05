@@ -10,8 +10,6 @@
   --color-bg-secondary: #f6f6f6;
   --color-text: #080815;
   --color-text-secondary: #555555;
-  --color-link: #1f5aff;
-  --color-link-hover: #0040dd;
   --color-accent: #FFC11E;
   --color-accent-hover: #f6ba19;
   --color-red: #EF1561;
@@ -20,8 +18,9 @@
   --color-footer-bg: #33363D;
   --color-footer-text: #ffffff;
   --color-footer-text-secondary: #adadad;
-  --color-code-bg: #f6f6f6;
-  --color-code-text: #080815;
+  --color-code-bg: #262326;
+  --color-code-text: #f8f8f2;
+  --color-code-border: #494649;
   --color-border: #ebeaee;
   --color-heading: #080815;
   --content-max-width: 900px;
@@ -33,8 +32,6 @@
   --color-bg-secondary: #262326;
   --color-text: #e0e0e0;
   --color-text-secondary: #999999;
-  --color-link: #FFC11E;
-  --color-link-hover: #ffd561;
   --color-accent: #FFC11E;
   --color-accent-hover: #f6ba19;
   --color-red: #EF1561;
@@ -43,8 +40,9 @@
   --color-footer-bg: #080815;
   --color-footer-text: #cccccc;
   --color-footer-text-secondary: #888888;
-  --color-code-bg: #2d2d3d;
-  --color-code-text: #e0e0e0;
+  --color-code-bg: #262326;
+  --color-code-text: #f8f8f2;
+  --color-code-border: #494649;
   --color-border: #444444;
   --color-heading: #ffffff;
 }
@@ -55,8 +53,6 @@
     --color-bg-secondary: #262326;
     --color-text: #e0e0e0;
     --color-text-secondary: #999999;
-    --color-link: #FFC11E;
-    --color-link-hover: #ffd561;
     --color-accent: #FFC11E;
     --color-accent-hover: #f6ba19;
     --color-red: #EF1561;
@@ -65,8 +61,9 @@
     --color-footer-bg: #080815;
     --color-footer-text: #cccccc;
     --color-footer-text-secondary: #888888;
-    --color-code-bg: #2d2d3d;
-    --color-code-text: #e0e0e0;
+    --color-code-bg: #262326;
+    --color-code-text: #f8f8f2;
+    --color-code-border: #494649;
     --color-border: #444444;
     --color-heading: #ffffff;
   }
@@ -110,14 +107,25 @@ h4 { font-size: 1.125rem; }
 p { margin-bottom: 1em; }
 
 a {
-  color: var(--color-link);
+  color: var(--color-heading);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.2s ease-in-out;
+  font-weight: 600;
+  border-bottom: 1.5px solid var(--color-accent);
+  transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 a:hover {
-  color: var(--color-link-hover);
-  text-decoration: underline;
+  color: var(--color-accent);
+  text-decoration: none;
+}
+
+[data-theme="dark"] a {
+  color: var(--color-text);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) a {
+    color: var(--color-text);
+  }
 }
 
 strong { font-weight: 700; }
@@ -169,8 +177,8 @@ figcaption {
 code {
   font-family: "SFMono-Regular", Consolas, "Liberation Mono", Menlo, monospace;
   font-size: 0.875em;
-  background: var(--color-code-bg);
-  color: var(--color-code-text);
+  background: var(--color-bg-secondary);
+  color: var(--color-text);
   padding: 0.15em 0.4em;
   border-radius: 4px;
 }
@@ -178,16 +186,32 @@ code {
 pre {
   background: var(--color-code-bg);
   color: var(--color-code-text);
-  padding: 1.25em;
+  padding: 2.5em 1.25em 1.25em;
   border-radius: 6px;
   overflow-x: auto;
   margin: 1.5em 0;
   line-height: 1.5;
-  border: 1px solid var(--color-border);
+  border: 1px solid var(--color-code-border);
+  position: relative;
+}
+
+pre::before {
+  content: "";
+  position: absolute;
+  top: 0.75em;
+  left: 1em;
+  display: flex;
+  gap: 6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #EF6B73;
+  box-shadow: 18px 0 0 #FFC11E, 36px 0 0 #A6E22E;
 }
 
 pre code {
   background: none;
+  color: inherit;
   padding: 0;
   font-size: 0.85rem;
   border-radius: 0;
@@ -243,8 +267,10 @@ th {
   color: var(--color-navbar-text);
   text-decoration: none;
 }
-.navbar-brand svg {
-  flex-shrink: 0;
+.navbar-brand img {
+  height: 28px;
+  width: auto;
+  margin: 0;
 }
 .navbar-nav {
   display: flex;
@@ -263,14 +289,30 @@ th {
   font-weight: 600;
   text-decoration: none;
   padding: 0.5rem 0.875rem;
-  border-radius: 4px;
   border-bottom: 2px solid transparent;
+  border-radius: 0;
   transition: color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .navbar-nav a:hover {
   color: var(--color-accent);
   text-decoration: none;
   border-bottom-color: var(--color-accent);
+}
+
+/* Docs CTA button */
+.navbar-nav a.nav-button {
+  background: var(--color-accent);
+  color: #080815;
+  border-radius: 4px;
+  padding: 9px 15px;
+  font-weight: 600;
+  border-bottom: none;
+  transition: background-color 0.2s ease-in-out;
+}
+.navbar-nav a.nav-button:hover {
+  background: var(--color-accent-hover);
+  color: #080815;
+  border-bottom: none;
 }
 
 /* --- Theme Toggle --- */
@@ -280,7 +322,6 @@ th {
   color: var(--color-navbar-text);
   cursor: pointer;
   padding: 0.375rem;
-  font-size: 1.25rem;
   line-height: 1;
   display: flex;
   align-items: center;
@@ -289,6 +330,9 @@ th {
 }
 .theme-toggle:hover {
   color: var(--color-accent);
+}
+.theme-icon {
+  display: none;
 }
 
 /* ============================================
@@ -350,9 +394,10 @@ th {
 .post-list .post-title a {
   font-weight: 600;
   color: var(--color-heading);
+  border-bottom: none;
 }
 .post-list .post-title a:hover {
-  color: var(--color-link);
+  color: var(--color-accent);
   text-decoration: none;
 }
 .post-list .post-meta-line {
@@ -385,6 +430,7 @@ th {
   font-weight: 600;
   text-transform: lowercase;
   text-decoration: none;
+  border-bottom: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .tag-pill:hover {
@@ -425,9 +471,10 @@ th {
 .post-meta a {
   color: var(--color-text-secondary);
   font-weight: 500;
+  border-bottom: none;
 }
 .post-meta a:hover {
-  color: var(--color-link);
+  color: var(--color-accent);
 }
 .post-meta .post-tags {
   display: inline-flex;
@@ -481,6 +528,7 @@ th {
   font-size: 0.9375rem;
   font-weight: 600;
   color: var(--color-text);
+  border-bottom: none;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 .tag-list .tag-count {
@@ -504,6 +552,10 @@ th {
    ============================================ */
 .footer {
   background-color: var(--color-footer-bg);
+  background-image: url("/images/vector-grid.svg");
+  background-position: 50% 0;
+  background-repeat: repeat-y;
+  background-size: contain;
   color: var(--color-footer-text);
   margin-top: auto;
 }
@@ -527,11 +579,17 @@ th {
   font-weight: 700;
   font-size: 1.125rem;
   text-decoration: none;
+  border-bottom: none;
   margin-bottom: 0.75rem;
 }
 .footer-brand:hover {
   color: var(--color-footer-text);
   text-decoration: none;
+}
+.footer-brand img {
+  height: 24px;
+  width: auto;
+  margin: 0;
 }
 .footer-description {
   color: var(--color-footer-text-secondary);
@@ -559,6 +617,7 @@ th {
   font-size: 0.875rem;
   font-weight: 400;
   text-decoration: none;
+  border-bottom: none;
   transition: color 0.2s ease-in-out;
 }
 .footer-col a:hover {
@@ -567,17 +626,22 @@ th {
 }
 .footer-social {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
   margin-top: 1rem;
 }
 .footer-social a {
   color: var(--color-footer-text-secondary);
-  font-size: 0.875rem;
-  font-weight: 600;
-  transition: color 0.2s ease-in-out;
+  border-bottom: none;
+  transition: opacity 0.2s ease-in-out;
 }
 .footer-social a:hover {
-  color: var(--color-accent);
+  opacity: 0.8;
+}
+.footer-social img {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  border-radius: 4px;
 }
 .footer-bottom {
   display: flex;
@@ -602,6 +666,7 @@ th {
   color: var(--color-footer-text-secondary);
   font-size: 0.8125rem;
   text-decoration: none;
+  border-bottom: none;
 }
 .footer-legal a:hover {
   color: var(--color-accent);
@@ -629,6 +694,9 @@ iframe {
   .navbar-nav a {
     font-size: 0.875rem;
     padding: 0.5rem 0.5rem;
+  }
+  .navbar-nav a.nav-button {
+    padding: 6px 10px;
   }
   .container {
     padding: 2rem 1.25rem;
@@ -662,6 +730,10 @@ iframe {
   .navbar-nav a {
     font-size: 0.8125rem;
     padding: 0.5rem 0.375rem;
+  }
+  .navbar-nav a.nav-button {
+    padding: 6px 8px;
+    font-size: 0.8125rem;
   }
   .container {
     padding: 1.5rem 1rem;
