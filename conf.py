@@ -50,7 +50,8 @@ ablog_builder = "dirhtml"                # /post/ not /post.html
 ablog_website = "_website"
 
 # -- HTML output
-html_theme = "pydata_sphinx_theme"
+html_theme = "dask_blog_theme"
+html_theme_path = ["_themes"]
 html_title = "Dask Working Notes"
 html_favicon = "_static/favicon.svg"
 html_static_path = ["_static"]
@@ -59,7 +60,6 @@ html_extra_path = [
     "CNAME",
     "extras",           # Redirect pages (atom.xml, feed.*.xml, etc.)
 ]
-html_css_files = ["css/custom.css"]
 
 html_theme_options = {
     "logo": {
@@ -71,22 +71,6 @@ html_theme_options = {
     "navbar_start": ["navbar-logo"],
     "navbar_center": ["navbar-nav"],
     "navbar_end": ["theme-switcher", "navbar-icon-links"],
-    "external_links": [
-        {"name": "dask.org", "url": "https://dask.org"},
-        {"name": "Docs", "url": "https://docs.dask.org"},
-    ],
-    "icon_links": [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/dask/dask-blog",
-            "icon": "fa-brands fa-square-github",
-            "type": "fontawesome",
-        },
-    ],
-    "pygments_light_style": "tango",
-    "pygments_dark_style": "monokai",
-    "footer_start": ["copyright"],
-    "footer_end": ["last-updated"],
     "secondary_sidebar_items": [],       # No right sidebar on posts
 }
 
@@ -105,7 +89,4 @@ mathjax3_config = {
     },
 }
 
-# -- Analytics (injected via custom template override)
-html_context = {
-    "gtm_id": "GTM-P4GQM59",
-}
+# -- Analytics (handled by dask-sphinx-theme via theme_google_tag_manager_id)

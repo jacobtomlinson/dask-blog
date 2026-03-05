@@ -7,7 +7,12 @@
       "WebSearch",
       "WebFetch(domain:mackenga.ro)",
       "WebFetch(domain:www.sphinx-doc.org)",
-      "WebFetch(domain:www.dask.org)"
+      "WebFetch(domain:www.dask.org)",
+      "Skill(playwright-cli)",
+      "WebFetch(domain:docs.readthedocs.io)",
+      "WebFetch(domain:github.com)",
+      "WebFetch(domain:docs.readthedocs.com)",
+      "WebFetch(domain:about.readthedocs.com)"
     ]
   }
 }

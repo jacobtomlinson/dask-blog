@@ -12,3 +12,4 @@ public/
 __pycache__/
 *.pyc
 .playwright-cli/
+screenshots/
