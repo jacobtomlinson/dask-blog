@@ -26,20 +26,15 @@ jobs:
         with:
           fetch-depth: 0
 
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-
-      - name: Install dependencies
-        run: pip install .
+      - uses: astral-sh/setup-uv@v5
 
       - name: Build site
-        run: ablog build
+        run: uv run sphinx-build -b dirhtml . _build/dirhtml
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: _website/
+          path: _build/dirhtml/
 
   deploy:
     if: github.event_name != 'pull_request'

@@ -18,7 +18,7 @@ source_suffix = {
 }
 
 exclude_patterns = [
-    "_build", "_website", ".doctrees",
+    "_build", ".doctrees",
     "node_modules", "public", ".github",
     "README.md", "CONTRIBUTING.md", "plans",
     "drafts", "_extra",
@@ -47,7 +47,6 @@ disqus_shortname = "dask-blog"
 
 # ABlog builder
 ablog_builder = "dirhtml"                # /post/ not /post.html
-ablog_website = "_website"
 
 # -- HTML output
 html_theme = "dask_blog_theme"

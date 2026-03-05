@@ -10,7 +10,7 @@ This blog uses [Sphinx](https://www.sphinx-doc.org/) with
 Start the development server with auto-reload:
 
 ```console
-uv run sphinx-autobuild -b dirhtml . _website
+uv run sphinx-autobuild -b dirhtml . _build/dirhtml
 ```
 
 This opens the site at <http://localhost:8000> and watches for changes.
@@ -18,10 +18,10 @@ This opens the site at <http://localhost:8000> and watches for changes.
 To build a static copy:
 
 ```console
-uv run sphinx-build -b dirhtml . _website
+uv run sphinx-build -b dirhtml . _build/dirhtml
 ```
 
-Built pages live in `_website/`.
+Built pages live in `_build/dirhtml/`.
 
 ## Add a new post
 
