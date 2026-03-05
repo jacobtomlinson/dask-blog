@@ -1,4 +1,0 @@
-sphinx>=8.0
-ablog>=0.11
-dask-sphinx-theme
-myst-parser>=4.0

@@ -18,7 +18,7 @@ build:
       - uv venv "${READTHEDOCS_VIRTUALENV_PATH}"
     # Install dependencies with uv (much faster than pip)
     install:
-      - uv pip install --python "${READTHEDOCS_VIRTUALENV_PATH}/bin/python" -r requirements.txt
+      - uv pip install --python "${READTHEDOCS_VIRTUALENV_PATH}/bin/python" .
 
 sphinx:
   configuration: conf.py

@@ -7,16 +7,10 @@ A collection of working notes about [Dask](https://dask.org)
 This blog uses [Sphinx](https://www.sphinx-doc.org/) with
 [ABlog](https://ablog.readthedocs.io/) and requires Python 3.10+.
 
-Install dependencies:
-
-```console
-pip install -r requirements.txt
-```
-
 Start the development server with auto-reload:
 
 ```console
-make serve
+uv run sphinx-autobuild -b dirhtml . _website
 ```
 
 This opens the site at <http://localhost:8000> and watches for changes.
@@ -24,7 +18,7 @@ This opens the site at <http://localhost:8000> and watches for changes.
 To build a static copy:
 
 ```console
-make build
+uv run sphinx-build -b dirhtml . _website
 ```
 
 Built pages live in `_website/`.

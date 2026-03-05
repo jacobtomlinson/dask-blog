@@ -2,7 +2,7 @@
   publish = "_build/dirhtml"
   command = """
     pip install uv && \
-    uv pip install --system -r requirements.txt && \
+    uv pip install --system . && \
     sphinx-build -b dirhtml . _build/dirhtml
   """
 
