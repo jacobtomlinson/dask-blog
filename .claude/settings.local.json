@@ -3,7 +3,11 @@
     "allow": [
       "WebFetch(domain:raw.githubusercontent.com)",
       "WebFetch(domain:www.dask.org)",
-      "Skill(playwright-cli)"
+      "Skill(playwright-cli)",
+      "WebSearch",
+      "WebFetch(domain:docs.readthedocs.com)",
+      "WebFetch(domain:devopstutodoc.readthedocs.io)",
+      "WebFetch(domain:about.readthedocs.com)"
     ]
   }
 }
